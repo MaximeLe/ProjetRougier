@@ -1,0 +1,14 @@
+/*-------------------------------
+
+[Rougier & Ple CSS for IE]
+
+Auteur : Hervé FRACKOWIAK
+Framework : Hydra
+Version : 1.00
+Date : 08/12/2011
+
+-------------------------------*/
+
+
+/* Navigation */
+.panier #etapes, .livraison #etapes, .paiement #etapes,.confirmation #etapes  {zoom: 1;display: inline;}

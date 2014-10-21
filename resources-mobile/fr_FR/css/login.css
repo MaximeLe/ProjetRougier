@@ -1,0 +1,7 @@
+.modal-forgotPassword {float:left;position:absolute;display:none;z-index:101;padding:0px;}
+.modal-forgotPassword  .btn_close {float:right;margin-right:10px;cursor:pointer;}
+
+#forgotPassword .contenu_blanc{ background: url("../img/clientArea/page_centrale.png") repeat-y scroll 0 0 transparent;/*background-color:#ffffff;*/ height:150px; width:400px;/*border-bottom:2px solid black;border-right:2px solid black;*/padding-left:10px;padding-right:10px;padding-bottom:10px}
+#thanks .contenu_blanc{ background: url("../img/clientArea/page_centrale.png") repeat-y scroll 0 0 transparent;/*background-color:#ffffff;*/ height:60px; width:400px;/*border-bottom:2px solid black;border-right:2px solid black;*/padding-left:10px;padding-right:10px;padding-bottom:10px}
+
+.bloc_droit a{cursor:pointer;}

@@ -1,0 +1,165 @@
+<input type="hidden" name="delivery" value="relay"/>
+<div class="separation"></div>
+<div class="cadregris grand">
+<div class="barretitre"><span>Mon point relais</span></div>
+								<div class="ligne">
+									<div class="floatLeft">
+										<span class="bold"><%= relayName %></span><br />
+										<%= addressLine1  %> 
+										<% if(addressLine1 != null && addressLine1 != ''){%>
+											<br /> 
+										<%}%>
+										
+										
+										
+										<%= zipCode %> <%= city %><br />
+										<%= locationHint %><br />
+										
+										<br /><br />
+										<span class="bold">Horaires d’ouverture :</span><br />
+										<% var bo=new Boolean(false);%>
+										
+										<table class="horaires">
+										<% if(DAY1 != null){ %>
+											<tr><th>Lundi :</th><td>
+											<% if(isOpenedAM1 != null){ %>
+												<%= openingHoursAM_DAY_1%>-<%= closingHoursAM_DAY_1%>
+											<%}%>	
+											<% if(isOpenedPM1 != null){ %>
+												<%if(isOpenedAM1 != null){%>
+													|
+												<%}%> 
+												<%= openingHoursPM_DAY_1%>-<%= closingHoursPM_DAY_1%>
+											<%}%>
+											</td></tr>
+										<%}else{%>
+											<tr><th>Lundi :</th><td> Fermé</td></tr>				
+										<%}%>
+										
+										<% if(DAY2 != null){ %>
+											<tr><th>Mardi :</th><td>
+											<% if(isOpenedAM2 != null){ %>
+												<%= openingHoursAM_DAY_2%>-<%= closingHoursAM_DAY_2%>
+											<%}%>	
+											<% if(isOpenedPM2 != null){ %>
+												<%if(isOpenedAM2 != null){%>
+													|
+												<%}%> 
+												<%= openingHoursPM_DAY_2%>-<%= closingHoursPM_DAY_2%>
+											<%}%>
+											</td></tr>
+										<%}else{%>
+											<tr><th>Mardi :</th><td> Fermé</td></tr>				
+										<%}%>
+										
+										<% if(DAY3 != null){ %>
+											<tr><th>Mercredi :</th><td>
+											<% if(isOpenedAM3 != null){ %>
+												<%= openingHoursAM_DAY_3%>-<%= closingHoursAM_DAY_3%>
+											<%}%>	
+											<% if(isOpenedPM3 != null){ %>
+												<%if(isOpenedAM3 != null){%>
+													|
+												<%}%> 
+												<%= openingHoursPM_DAY_3%>-<%= closingHoursPM_DAY_3%>
+											<%}%>
+											</td></tr>
+										<%}else{%>
+											<tr><th>Mercredi :</th><td> Fermé</td></tr>			
+										<%}%>
+										
+										<% if(DAY4 != null){ %>
+											<tr><th>Jeudi :</th><td> 
+											<% if(isOpenedAM4 != null){ %>
+												<%= openingHoursAM_DAY_4%>-<%= closingHoursAM_DAY_4%>
+											<%}%>	
+											<% if(isOpenedPM4 != null){ %>
+												<%if(isOpenedAM4 != null){%>
+													|
+												<%}%> 
+												<%= openingHoursPM_DAY_4%>-<%= closingHoursPM_DAY_4%>
+											<%}%>
+											</td></tr>
+										<%}else{%>
+											<tr><th>Jeudi :</th><td> Fermé</td></tr>					
+										<%}%>
+											 
+										<% if(DAY5 != null){ %>
+											<tr><th>Vendredi :</th><td>
+											<% if(isOpenedAM5 != null){ %>
+												<%= openingHoursAM_DAY_5%>-<%= closingHoursAM_DAY_5%>
+											<%}%>	
+											<% if(isOpenedPM5 != null){ %>
+												<%if(isOpenedAM5 != null){%>
+													|
+												<%}%> 
+												<%= openingHoursPM_DAY_5%>-<%= closingHoursPM_DAY_5%>
+											<%}%>
+											</td></tr>
+										<%}else{%>
+											<tr><th>Vendredi :</th><td> Fermé</td></tr>				
+										<%}%>
+										
+										<% if(DAY6 != null){ %>
+											<tr><th>Samedi :</th><td>
+											<% if(isOpenedAM6 != null){ %>
+												<%= openingHoursAM_DAY_6%>-<%= closingHoursAM_DAY_6%>
+											<%}%>	
+											<% if(isOpenedPM6 != null){ %>
+												<%if(isOpenedAM6 != null){%>
+													|
+												<%}%> 
+												<%= openingHoursPM_DAY_6%>-<%= closingHoursPM_DAY_6%>
+											<%}%>
+											</td></tr>
+										<%}else{%>
+											<tr><th>Samedi :</th><td> Fermé</td></tr>				
+										<%}%>
+										
+										<% if(DAY7 != null){ %>
+											<tr><th>Dimanche :</th><td>
+											<% if(isOpenedAM7 != null){ %>
+												<%= openingHoursAM_DAY_7%>-<%= closingHoursAM_DAY_7%>
+											<%}%>	
+											<% if(isOpenedPM7 != null){ %>
+												<%if(isOpenedAM7 != null){%>
+													|
+												<%}%> 
+												<%= openingHoursPM_DAY_7%>-<%= closingHoursPM_DAY_7%>
+											<%}%>
+											</td></tr>
+										<%}else{%>
+											<tr><th>Dimanche :</th><td> Fermé</td></tr>			
+										<%}%>
+										</table>
+										<br/>
+											
+											
+										<% if(photo != null && photo != ''){  %>	
+											<div class="espace"><img src="<%= photo %> " style="max-width:300px;"/></div>
+										<%}%>
+										
+									</div>
+									<div class="floatRight">
+										<div class="bloc">
+											<span class="bold">Trouvez un autre point relais par code postal</span> <span class="erreur">*</span><br />
+											<p><label for="cpRelais"></label><input type="text" name="cpRelay" id="cpRelay" class="input_petit"  value="" /><input onclick="javascript:clickSearchRelay();return false" id="searchRelay" name="searchRelay" type="image" src="<%= contextPath %>/resources/<%= codeIsoLang %>/img/common/searchOk.png" value="ok"></p>
+										</div>
+										<div id="bloc_search_relay" name="bloc_search_relay" class="bloc">
+											<span class="bold">Points relais trouv&eacute;s *</span>
+											<p><select name="selectRelay" id="selectRelay" class="multiple_grand" style="height:250px" multiple></option></select></p>
+										</div>
+									</div>
+								
+									
+								</div>
+								<!-- Boutons -->
+								<div class="boutonsbas">
+									<p class="floatRight zonebas">
+										<a href="<%= contextPath %>/cart.html" class="bt_retour">Retour</a>
+										<input type="submit"
+												value="Payer>>" class="bt_suivant_submit_delivery" />
+									</p>
+								</div>
+								
+					</div>							

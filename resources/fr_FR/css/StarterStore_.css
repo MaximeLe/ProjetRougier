@@ -1,0 +1,309 @@
+/***********************************************************************/
+/* GLOBAL */
+/***********************************************************************/
+body {margin:auto; width:980px; background-repeat:repeat-x; background-color:#444444; font-family:Arial, Helvetica, sans-serif; font-size:9pt; color:#666666;}
+a img {border:none;}
+div, p, form, input, select, textarea, label, ul, li, dl, dt, dd, h1, h2 {margin:0; padding:0;}
+li {list-style:none;}
+
+.gauche {float:left;}
+.gauche2 {float:left; margin:0 17px 0 0;}
+.droite {float:right;}
+.ligne {clear:both;}
+.ligne2 {clear:both; overflow:hidden; margin:0 0 20px 0;}
+.gras {font-weight:bold;}
+.alignercentrer {text-align:center;}
+.vert {color:#8BBF2A;}
+.rouge {color:#E11E34;}
+
+.lien_blanc {text-decoration:none; color:#FFFFFF;}
+.lien_blanc:hover {text-decoration:underline;}
+
+.grey_box  {position:absolute;background-color:#000000;opacity:0.8;left:0;top:0;z-index:100;width:100%;height:100%;display:none;}
+
+/***********************************************************************/
+/* BANDE ORANGE */
+/***********************************************************************/
+#bandeorange {width:auto; height:34px; line-height:35px; color:#FFFFFF; text-align:center;}
+#bandeorange label {margin:0 10px; font-weight:bold; color:#000000;}
+
+/***********************************************************************/
+/* ENTETE */
+/***********************************************************************/
+#entete {clear:both; overflow:hidden; margin:10px 0 0 0; width:980px;}
+#entete_gauche {float:left; width:9px; height:84px; background-image:url("../img/StarterStore/Entete_gauche.jpg"); background-repeat:no-repeat;}
+#entete_centre {float:left; width:962px; height:84px; background-image:url("../img/StarterStore/Entete_centre.jpg"); background-repeat:repeat-x;}
+#entete_droite {float:left; width:9px; height:84px; background-image:url("../img/StarterStore/Entete_droite.jpg"); background-repeat:no-repeat;}
+
+#menuperso {float:right; margin:15px 10px; color:#444444;}
+#menuperso ul {overflow:hidden;}
+#menuperso li {float:left; margin:0 3px 0 0;}
+
+.logotype {margin:0 0 0 10px;}
+
+.lien_menuperso {text-decoration:none; color:#444444;}
+.lien_menuperso:hover {text-decoration:underline;}
+
+/***********************************************************************/
+/* MENU PRINCIPAL */
+/***********************************************************************/
+#menuprincipal {position:relative; width:980px; height:40px; background-image:url("../img/StarterStore/Menuprincipal_background.jpg"); background-repeat:repeat-x;}
+#menuprincipal ul {overflow:hidden;}
+#menuprincipal li {float:left; width:100px; height:40px; background-image:url("../img/StarterStore/Menuprincipal_separation.jpg"); background-repeat:no-repeat; background-position:right;}
+#rechercher {position:absolute; top:0; right:0; margin:0 10px;}
+
+.rechercher_input {width:200px; font-style:italic; color:#CCCCCC;}
+.rechercher_espace {float:left; margin:12px;}
+.rechercher_bouton {width:34px; height:40px; background-image:url("../img/StarterStore/Rechercher_bouton.jpg"); background-repeat:no-repeat; font-size:0pt; text-indent:-5000px; cursor:pointer; border:none;}
+
+.lien_menuprincipal {display:block; margin:0 2px 0 0; padding:0 10px; height:40px; line-height:40px; text-decoration:none; font-weight:bold; color:#FFFFFF;}
+.lien_menuprincipal:hover {background-image:url("../img/StarterStore/Menuprincipal_survol.jpg"); background-repeat:repeat-x;}
+
+/***********************************************************************/
+/* PAGE ACCUEIL (homePage.jsp) */
+/***********************************************************************/
+/* #fenetre_haut {clear:both; width:980px; height:28px; background-image:url("../img/StarterStore/Fenetre_haut.jpg"); background-repeat:no-repeat;}
+#fenetre_haut2 {clear:both; width:980px; position:relative; height:30px; background-image:url("../img/StarterStore/Chemin_background.jpg"); background-repeat:repeat-x;}
+#fenetre_centre {clear:both; overflow:hidden; position:relative; width:980px; background-image:url("../img/StarterStore/Fenetre_centre.jpg"); background-repeat:repeat-y;}
+#fenetre_bas {clear:both; width:980px; height:9px; background-image:url("../img/StarterStore/Fenetre_bas.jpg"); background-repeat:no-repeat;}
+
+#diaporama {float:left; position:relative; margin:5px 0 0 15px; width:626px; height:296px; background-image:url("../img/StarterStore/Diaporama_background.jpg"); background-repeat:no-repeat;}
+#diaporama ul {position:absolute; top:10px; right:10px; overflow:hidden;}
+#diaporama li {float:left; margin:0 1px;}
+
+#ems {clear:both; overflow:hidden; padding:17px 0 8px 17px;}
+#ems .prix br {display:none}
+
+.diaporama_image {position:absolute; top:2px; left:2px; overflow:hidden; width:620px; height:290px;}
+.diaporama_masque {position:absolute; bottom:3px; left:2px; width:620px; height:78px; background-image:url("../img/StarterStore/Diaporama_masque.png");}
+.diaporama_masque p {margin:10px; width:410px; color:#FFFFFF; text-align:left;}
+
+.bouton_decouvrez {position:absolute; bottom:15px; right:15px; display:block; width:154px; height:21px; background-image:url("../img/StarterStore/Bouton_decouvrez.png"); background-repeat:no-repeat; font-size:0pt; text-indent:-5000px;}
+
+.cadre {float:left; margin:7px 0 2px 20px;}
+.cadre_haut {clear:both; width:304px; height:4px; background-image:url("../img/StarterStore/Cadre_haut.jpg"); background-repeat:no-repeat;}
+.cadre_centre {clear:both; overflow:hidden; width:304px; background-image:url("../img/StarterStore/Cadre_centre.jpg"); background-repeat:repeat-y;}
+.cadre_centre div {padding:5px;}
+.cadre_bas {clear:both; margin:0 0 1px 0; width:304px; height:5px; background-image:url("../img/StarterStore/Cadre_bas.jpg"); background-repeat:no-repeat;}
+.cadre_petit {overflow:hidden; height:88px;}
+.cadre_grand {overflow:hidden; position:relative; height:210px;}
+.voirProduit {cursor:pointer;}
+
+.icone_information {display:block; margin:0 0 5px 0; height:24px; padding:0 0 0 35px; background-image:url("../img/StarterStore/Icone_information.jpg"); background-repeat:no-repeat; background-position:left; line-height:20px; font-weight:bold;}
+.icone_livraison {display:block; margin:0 0 5px 0; height:24px; padding:0 0 0 35px; background-image:url("../img/StarterStore/Icone_livraison.jpg"); background-repeat:no-repeat; background-position:left; line-height:20px; font-weight:bold;}
+.icone_gratuit {display:block; margin:0 0 5px 0; height:24px; padding:0 0 0 35px; background-image:url("../img/StarterStore/Icone_gratuit.jpg"); background-repeat:no-repeat; background-position:left; line-height:20px; font-weight:bold;}
+
+.newsletter_marge {float:left; padding:4px 5px 0 0;}
+.newsletter_input {width:200px; font-style:italic; color:#CCCCCC;}
+.newsletter_bouton {width:34px; height:23px; background-image:url("../img/StarterStore/Newsletter_bouton.jpg"); background-repeat:no-repeat; font-size:0pt; text-indent:-5000px; cursor:pointer; border:none;}
+
+.note {font-size:7pt; color:#666666;}
+.prix {position:absolute; top:0; right:20px; text-align:right;}
+.prixbarre {font-size:7pt; color:#999999; text-decoration:line-through;display:block}
+.prixbleu {font-size:14pt; font-weight:bold; color:#0280B8;}
+.flap_20 {position:absolute; top:0; left:170px; width:20px; height:50px; background-image:url("../img/StarterStore/Flap_20.png"); background-repeat:no-repeat;}
+.flap_40 {position:absolute; top:0; left:170px; width:20px; height:50px; background-image:url("../img/StarterStore/Flap_40.png"); background-repeat:no-repeat;}
+.indicateur_vert {position:absolute; top:0; right:3px; width:11px; height:40px; background-image:url("../img/StarterStore/Indicateur_vert.jpg"); background-repeat:no-repeat;}
+.indicateur_rouge {position:absolute; top:0; right:3px; width:11px; height:40px; background-image:url("../img/StarterStore/Indicateur_rouge.jpg"); background-repeat:no-repeat;}
+.description {position:absolute; top:60px; left:170px; width:115px;}
+.titre {font-weight:bold; color:#000000;}
+.soustitre {font-weight:bold; color:#666666;}
+ */
+/***********************************************************************/
+/* LISTE DES PRODUITS (catalogEntryList.jsp) */
+/***********************************************************************/
+#chapitre {clear:both; width:980px; height:220px;}
+#emscategories {position:absolute; top:368px; left:20px;}
+#chemin {position:absolute; top:8px; left:10px; color:#000000;}
+#chemin_categories {padding:0 0 0 10px; background-image:url("../img/StarterStore/Chemin_icone.jpg"); background-repeat:no-repeat; background-position:left;}
+
+#menucategories {position:absolute; top:160px; left:20px;}
+#menucategories_haut {width:214px; height:53px; background-image:url("../img/StarterStore/Listepetit_haut.png"); background-repeat:no-repeat;}
+#menucategories_haut p {padding:16px 0 0 25px; font-weight:bold;}
+#menucategories_centre {width:214px; background-image:url("../img/StarterStore/Listepetit_centre.png"); background-repeat:repeat-y;}
+#menucategories_centre li {padding-left:10px;}
+#menucategories_centre div {overflow:auto; margin:0 10px; height:140px;}
+#menucategories_bas {width:214px; height:11px; background-image:url("../img/StarterStore/Listepetit_bas.png"); background-repeat:no-repeat;}
+
+#affine {position:absolute; top:158px; left:250px;}
+#affine hr {margin:5px 0 5px 1px;; padding:0; width:708px; border:solid 1px #4C4C4C;}
+#affine_haut {width:714px; height:10px; background-image:url("../img/StarterStore/Listegrand_haut.png"); background-repeat:no-repeat;}
+#affine_centre {width:714px; background-image:url("../img/StarterStore/Listegrand_centre.png"); background-repeat:repeat-y;}
+#affine_contenu {overflow:auto; margin:0 10px; height:123px;}
+#affine_contenu2 {overflow:hidden; margin:0 10px; height:50px; color:#333333;}
+#affine_bas {width:714px; height:11px; background-image:url("../img/StarterStore/Listegrand_bas.png"); background-repeat:no-repeat;}
+#affine_tri {float:left;}
+#affine_afficher {float:left; margin:0 0 0 10px;}
+#affine_produits {float:right; font-size:12pt; font-weight:bold;}
+#affine_pagination {position:absolute; bottom:10px; right:10px;}
+.affine_bloc {float:left; margin:0 50px 0 0;}
+
+#affichproduits {overflow:hidden; margin:150px 15px 0 250px;}
+#affichproduits_pagination {text-align:right; margin:0 20px;}
+
+.cadreproduits_vert {float:left; position:relative; margin:0 4px 4px 0; width:234px; height:237px; background-image:url("../img/StarterStore/Cadreproduit_vert.png"); background-repeat:no-repeat;}
+.cadreproduits_rouge {float:left; position:relative; margin:0 4px 4px 0; width:234px; height:237px; background-image:url("../img/StarterStore/Cadreproduit_rouge.png"); background-repeat:no-repeat;}
+.cadreproduits_image {position:absolute; top:2px; left:1px;}
+.cadreproduits_flap {position:absolute; top:60px; right:3px;}
+.cadreproduits_description {position:absolute; top:150px; left:5px; width:220px; text-align:center;}
+.cadreproduits_prix {position:absolute; top:6px; right:20px; text-align:right;}
+.cadreproduits_note {position:absolute; top:90px; right:5px; text-align:right;}
+.cadreproduits_note span {padding:0 5px;}
+.cadreproduits_bouton {position:absolute; bottom:15px; left:65px;}
+
+.lien_categories {text-decoration:none; color:#333333;}
+.lien_categories:hover {text-decoration:underline;}
+
+.lien_chemin {text-decoration:none; color:#CCCCCC;}
+.lien_chemin:hover {text-decoration:underline;}
+
+.lien_pagination {text-decoration:none; color:#4C4C4C;}
+.lien_pagination:hover {text-decoration:underline;}
+/***********************************************************************/
+/* DONNEZ VOTRE AVIS (review.jsp) */
+/***********************************************************************/
+#avis_body {width:800px; background-image:none; background-color:#FFFFFF; line-height:25px;}
+#avis_bande {overflow:hidden; padding:5px 10px; background-color:#5F5F5F; color:#FFFFFF;}
+
+.avis_titre {margin:10px 30px; font-weight:bold; color:#5F5F5F;}
+.avis_titre2 {display:block; margin:0 0 10px 0; font-weight:bold; font-size:10pt; color:#575757;}
+.avis_fenetre {overflow:hidden; margin:10px 80px; padding:10px; width:630px; background-color:#F5F5F5;}
+.avis_fenetre2 {overflow:hidden; margin:10px 80px; width:630px; background-color:#F5F5F5;}
+.avis_intitule {float:left; margin:0 0 0 80px; width:150px;}
+.avis_intitule2 {float:left; margin:0 0 0 40px; width:130px;}
+.avis_intitule3 {float:left; margin:0 0 0 40px; padding:0 0 0 40px; width:250px; border-left:solid 1px #575757; border-right:solid 1px #575757;}
+.avis_intitule3 textarea {margin:10px 0 0 0; width:220px; height:30px;}
+
+.avis_intitule4 {float:left; margin:0 0 0 40px;}
+.avis_intitule label {display:block; margin:5px 0; padding:0; font-weight:bold; color:##5F5F5F;}
+.avis_droite {float:left; margin:0 0 0 50px; padding:0 0 0 50px; border-left:solid 1px #5F5F5F;}
+.avis_droite select {display:block; margin:10px 0; width:250px;}
+.avis_droite input {display:block; margin:10px 0; width:250px; height:15px;}
+.avis_droite textarea {display:block; margin:10px 0; width:250px; height:100px;}
+
+.avis_droite2 {float:left; margin:0 0 0 50px; padding:0 0 0 50px; border-left:solid 1px #5F5F5F;}
+.avis_droite2 input {margin:10px 0;}
+
+.avis_droite3 {float:left; margin:0 0 0 50px; padding:0 0 0 50px; border-left:solid 1px #5F5F5F;}
+.avis_ligne {overflow:hidden; padding:0; background-color:#DFDFDF; font-weight:bold; color:#575757;}
+.avis_textarea {width:250px; height:60px;}
+.avis_bouton {width:194px; height:25px; background-image:url("../img/StarterStore/Avis_bouton.jpg"); background-repeat:no-repeat; font-size:0pt; cursor:pointer; border:none; color:#f78a20;}
+.avis_auteur {float:left; width:150px;}
+.avis_commentaire {float:left; padding:10px; width:740px; background-color:#f5f5f5; color:#575757;}
+.avis_separation {overflow:hidden; margin:0 0 10px 0; padding:0 0 10px 0; border-bottom:solid 1px #898989;}
+
+/***********************************************************************/
+/* FICHE PRODUIT (catalogEntry.jsp) */
+/***********************************************************************/
+#fiche_navigation {float:right; margin:10px 20px 0 0; color:#FFFFFF;}
+#fiche_zonehaut {margin:10px 15px;}
+#fiche_zonebas {clear:both; margin:10px 15px;}
+#fiche_zoom {float:left; margin:10px 0 0 20px;}
+#fiche_infos {float:left; margin:0 0 0 10px; width:300px; color:#FFFFFF;}
+#fiche_cadrevert {position:relative; margin:10px 0 0 0; width:204px; height:201px; background-image:url("../img/StarterStore/Cadrefiche_vert.png"); background-repeat:no-repeat;}
+#fiche_cadrerouge {position:relative; margin:10px 0 0 0; width:204px; height:201px; background-image:url("../img/StarterStore/Cadrefiche_rouge.png"); background-repeat:no-repeat;}
+#fiche_acheter {position:absolute; top:140px; left:20px;}
+#additionalInformation {padding:20px; background-color:#FFFFFF;overflow:hidden}
+
+#accessory li{width:25%;overflow:hidden;float:left;text-align:center}
+#accessory img{display:block;background:#999;margin:auto;}
+#accessory li .prixbleu{display:block}
+
+#fiche_navbas {width:100%; height:34px; background-image:url("../img/StarterStore/Fichemenu_normal.jpg"); background-repeat:repeat-x;}
+#fiche_navbas ul {overflow:hidden;}
+#fiche_navbas li {float:left; width:100px; height:34px; background-image:url("../img/StarterStore/Menuprincipal_separation.jpg"); background-repeat:no-repeat; background-position:right; text-align:center;}
+
+#fiche_cadregris {position:relative; width:204px; height:158px; background-image:url("../img/StarterStore/Cadrefiche_gris.png"); background-repeat:no-repeat;}
+#fiche_cadregris ul {position:absolute; top:10px; left:30px;}
+#fiche_cadregris li {padding:5px 0;}
+
+.fiche_titre {font-weight:bold; color:#FFFFFF;}
+.fiche_accroche {font-style:italic; font-weight:bold; color:#FF7F00;}
+.fiche_note {float:left; margin:8px 0 0 10px;}
+.fiche_avis {clear:both; padding:10px 0 0 0;}
+.fiche_avis a {text-decoration:none; color:#FFFFFF;}
+.fiche_avis a:hover {text-decoration:underline;}
+.fiche_flap {position:absolute; top:1px; left:1px;}
+.fiche_prix {position:absolute; top:25px; right:30px; text-align:right;}
+.fiche_prixbarre {font-size:12pt; color:#999999; text-decoration:line-through;}
+.fiche_prixbleu {font-size:22pt; font-weight:bold; color:#0280B8;}
+.fiche_eco {position:absolute; top:90px; right:15px; font-size:7pt; color:#999999; text-align:right;}
+.fiche_stock {position:absolute; top:105px; right:15px;}
+.fiche_bouton {display:block; width:144px; height:22px; background-image:url("../img/StarterStore/Fiche_bouton.png"); background-repeat:no-repeat; line-height:21px; text-align:center; text-decoration:none; color:#FFFFFF;}
+
+.fiche_onglet {display:block; margin:0 2px 0 0; padding:0 10px; height:34px; line-height:32px; text-decoration:none; font-weight:bold; color:#EEEEEE;}
+.fiche_onglet:hover {background-image:url("../img/StarterStore/Menuprincipal_survol.jpg"); background-repeat:repeat-x;}
+.fiche_selected {display:block; margin:0 2px 0 0; padding:0 10px; height:34px; line-height:32px; text-decoration:none; font-weight:bold; background-color:#FFFFFF; color:#FE8300;}
+.fiche_selected:hover {background-image:none; background-color:#FFFFFF;}
+
+.lien_precedent {padding:0 0 0 10px; background-image:url("../img/StarterStore/Flecheblanche_gauche.png"); background-repeat:no-repeat; background-position:left; text-decoration:none; color:#FFFFFF; cursor:pointer;}
+.lien_precedent:hover {text-decoration:underline;}
+
+.lien_suivant {padding:0 10px 0 0; background-image:url("../img/StarterStore/Flecheblanche_droite.png"); background-repeat:no-repeat; background-position:right; text-decoration:none; color:#FFFFFF; cursor:pointer;}
+.lien_suivant:hover {text-decoration:underline;}
+
+/***********************************************************************/
+/* MODAL
+/***********************************************************************/
+#modal {position:absolute;display:none;z-index:101;background-color:#222222;border:1px solid #333333;padding:10px;max-width:800px;}
+#modal .btn_close {position:absolute;width:18px;height:18px;top:5px;right:5px;cursor:pointer;}
+#modal .btn_close img {margin:5px 6px;}
+#modal .contenu {margin-top:13px;overflow:hidden;}
+#modal .titre {font-size:14px;font-weight:bold;color:#ebe9e0;}
+
+/***********************************************************************/
+/* FOOTER */
+/***********************************************************************/
+#footer {position:relative; width:980px; height:84px; margin:0 0 20px 0; background-image:url("../img/StarterStore/Footer.jpg"); background-repeat:no-repeat;}
+#footer ul {position:absolute; top:10px; left:10px; overflow:hidden; color:#222222;}
+#footer li {float:left; margin:0 3px 0 0;}
+
+#copyright {position:absolute; top:60px; left:10px; color:#111111;}
+#share {position:absolute; top:10px; right:10px; text-align:right; color:#FFFFFF;}
+
+.lien_footer {text-decoration:none; color:#CCCCCC;}
+.lien_footer:hover {text-decoration:underline;}
+
+/***********************************************************************/
+/* SPECIFICITES IE7 & IE6 */
+/***********************************************************************/
+* html body {margin:0; text-align:center; font-size:8pt;}
+* html #bandeorange {position:relative; margin:0; padding:0; width:980px;}
+* html #bandeorange .droite {margin:0; padding:0; line-height:10pt;}
+* html .droite {position:absolute; top:10px; right:0;}
+* html #entete_centre {position:relative; text-align:left;}
+* html #menuperso {position:absolute; top:0; right:0;}
+* html .rechercher_espace {margin:9px;}
+* html .diaporama_masque {text-align:left; margin:0; padding:0;}
+* html #ems {margin:0 0 0 18px; padding:0; height:225px;}
+* html .cadre {text-align:left;}
+* html .cadre_haut {position:absolute;}
+* html .gauche2 {margin:0 16px 0 0;}
+* html .description {text-align:left;}
+* html .newsletter_input {height:20px;}
+*+ html .avis_intitule3 {margin:0 0 0 0; padding:0 0 0 40px;}
+*+ html #affichproduits {margin:150px 0 0 250px; width:800px;}
+*+ html #affine_contenu2 {height:37px;}
+*+ html .avis_droite select {height:30px; margin-left:30px;}
+*+ html .avis_droite {margin:0 0 0 30px; padding:0 0 0 30px;}
+*+ html .rechercher_bouton {border:solid 0px red;}
+*+ html .newsletter_bouton {border:solid 0px red;}
+*+ html .avis_bouton {border:solid 0px red;}
+*+ html #footer {padding-bottom:20px;}
+
+
+
+
+
+
+/***********************************************************************/
+/* jsp ticket */
+/***********************************************************************/
+.receipt {
+	float: right;
+	width: 19%;
+}
+
+.receipt h2 {
+	text-align: center;
+}

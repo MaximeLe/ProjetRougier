@@ -1,0 +1,529 @@
+/*-------------------------------
+
+[Starter Store CSS]
+
+Auteur : Hervé FRACKOWIAK
+Framework : Hydra
+Version : 1.00
+Date : 16/11/2010
+
+-------------------------------*/
+.grey_box  {position:absolute;background-color:#000000;opacity:0.8;left:0;top:0;z-index:100;width:100%;height:100%;display:none;}
+
+
+/* Redéfinition */
+body {background:#f3f3f3;font:11px/13px Arial, Helvetica, sans-serif; color:#666666;}
+ul {list-style-position:outside;}
+
+
+/* Global */
+#global {width:980px;margin:10px auto 0;}
+#content {width:100%;overflow:hidden;}
+#contenu {width:100%;overflow:hidden;}
+
+
+/* Header */ 
+#header {background:#ffffff;height:83px;}
+#header .logo {float:left;margin:8px 0 0 33px;}
+#header .navigation {float:right;font-size:12px;line-height:15px;color:#444444;margin:22px 14px 0 0;}
+#header .navigation li {float:left;padding:0 4px;}
+#header .navigation li a {color:#444444;}
+
+.autoComplete {background:white;padding:0px;margin:0px}
+
+
+/* Navigation */
+#navigation {height:40px;border-top:1px solid #1c1c1c;border-bottom:1px solid #1c1c1c;background:#CED4E1;}
+#navigation .categories {float:left;margin:0;}
+#navigation .categories li {float:left;font-size:14px;line-height:40px;color:#ffffff;font-weight:bold;padding:0 3px;white-space:nowrap;border-right:1px solid #1c1c1c;}
+#navigation .categories li.on {background:url(../img/common/bgNavigation_on.png) repeat-x;}
+#navigation .categories li a {color:#2157a3;}
+
+
+/* Search */
+#search {float:right;margin:9px 10px 0 0;}
+#search input[type=text] {float:left;border:1px solid #aaadb2;margin:0;padding:1px;height:19px;width:266px;font-size:12px;line-height:19px;font-style:italic;color:#cccccc;}
+#search input[type=text].on {font-style:normal;color:#666666;}
+#search input[type=image] {float:left;margin:1px 0 0 6px}
+
+/* autocomplete */
+.ui-autocomplete {
+	background: white;width:266px;max-height: 100px;overflow-y: auto;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+	/* add padding to account for vertical scrollbar */
+	padding-right: 20px;
+}
+/* IE 6 doesn't support max-height, we use height instead, but this forces the menu to always be this tall */
+* html .ui-autocomplete { height: 100px;}
+.ui-autocomplete li div{padding: 2px 2px;}
+.ui-state-hover div{background-color: #66CCFF;}
+
+
+/* Footer */
+#footer {background:#CED4E1;height:83px;border-top:1px solid #898989;}
+#footer .navigation {float:left;font-size:12px;line-height:15px;color:#222222;margin:14px 0 0 16px;}
+#footer .navigation li {float:left;padding:0 4px;}
+#footer .navigation li a {color:#2157a3;}
+#footer .copyright {float:left;clear:left;margin:15px 0 0 20px;font-size:12px;line-height:15px;color:#111111;}
+#footer .social {float:right;margin:14px 18px 0 0;}
+#footer .social .texte {font-size:12px;line-height:15px;font-weight:bold;color:#ffffff;text-align:right;}
+#footer .social .network {float:right;margin-left:6px;margin-top:8px;}
+
+
+/* Breadcrumb */
+#breadcrumb {height:29px;background:#CED4E1;padding-left:12px;font-size:10px;line-height:26px;color:#2157A3;}
+#breadcrumb a {color:#2157a3;text-decoration:underline;}
+#breadcrumb span {color:#2157a3;}
+#breadcrumb a.filter {text-decoration:none;}
+#breadcrumb a.filter img{margin-left:3px; vertical-align:sub; height:9px; width:9px;}
+#breadcrumb a.filter span {color:#222222;}
+
+/* Classe générique */
+
+.paginationG {font-size:13px;line-height:15px;color:#999999;}
+.paginationG a {color:#999999;}
+.paginationG a.bold {color:#666666;}
+
+/* /Classe générique */
+
+#bandeorange {overflow:hidden; width:auto; height:34px; color:#FFFFFF; text-align:center;}
+#bandeorange .date {float:left; width:660px; margin:auto;}
+
+.lien_blanc {text-decoration:none; color:#FFFFFF;}
+.lien_blanc:hover {text-decoration:underline;}
+
+/* Home Page */
+
+.homePage .contentStart {height:5px;background:#FFFFFF;}
+.homePage #contenu {background:#FFFFFF;padding:14px 17px 22px 19px;width:944px;}
+.homePage .contentEnd {height:5px;background:#FFFFFF;}
+
+.homePage .enVisio {float:left;position:relative;width:624px;height:294px;background:#FFFFFF;}
+.homePage .enVisio .listeImage {position:absolute;width:620px;height:290px;top:1px;left:1px;z-index:10;}
+.homePage .enVisio .listeTexte {position:absolute;width:620px;height:78px;bottom:3px;left:1px;z-index:15;background:url(../img/merchandising/bgVisio.png);}
+.homePage .enVisio .listeTexte .description {margin:6px 0 0 14px;font-size:12px;line-height:16px;font-weight:bold;color:#ffffff;width:410px;}
+.homePage .enVisio .listeTexte .description span {font-size:14px;line-height:18px;}
+.homePage .enVisio .listeTexte .description a {color:#ffffff;}
+.homePage .enVisio .listeTexte .description .lien {position:absolute;margin:28px 0 0 442px;}
+.homePage .enVisio .listePuce {position:absolute;top:9px;right:9px;margin:0;z-index:20;}
+.homePage .enVisio .listePuce li {float:left;}
+
+.homePage .enDroite {float:left;width:304px;}
+.homePage .enDroite.grand {clear:left;height:110px;background:url(../img/merchandising/en_hp_droite_01.png) no-repeat;}
+.homePage .enDroite.petit {clear:left;height:92px;background:url(../img/merchandising/en_hp_droite_02.png) no-repeat;}
+.homePage .enDroite .titre {font-size:14px;line-height:24px;font-weight:bold;color:#666666;margin:10px 0 0 10px;padding-left:38px;}
+.homePage .enDroite .titre.newsletter {background:url(../img/merchandising/ico_newsletter.png) no-repeat left center;}
+.homePage .enDroite .titre.liv24 {background:url(../img/merchandising/ico_liv24.png) no-repeat left center;}
+.homePage .enDroite .titre.livraison {background:url(../img/merchandising/ico_livraison.png) no-repeat left center;}
+.homePage .enDroite p {margin:8px 10px 4px;}
+.homePage .enDroite .inNewsletter {float:left;margin-left:10px;}
+.homePage .enDroite .inNewsletter input[type=text] {float:left;border:1px solid #aaadb2;margin:0;padding:1px;height:19px;width:232px;font-size:12px;line-height:19px;font-style:italic;color:#cccccc;}
+.homePage .enDroite .inNewsletter input[type=text].on {font-style:normal;color:#666666;}
+.homePage .enDroite .inNewsletter input[type=image] {float:left;margin:1px 0 0 6px}
+
+.homePage .enProduit {float:left;margin-top:16px;width:304px;height:214px;background:url(../img/merchandising/en_hp_produit.png) no-repeat;}
+.homePage .enProduit.centre {margin:16px 16px 0 16px;}
+.homePage .enProduit .visuel {margin:2px 0 0 2px;}
+.homePage .enProduit .note {margin:5px 0 0 10px;font-size:9px;line-height:13px;color:#666666;overflow:hidden;height:13px;}
+.homePage .enProduit .note li {float:left;text-align:center;width:17px;}
+.homePage .enProduit .note li.txt {width:56px;}
+.homePage .enProduit .voir {margin:10px 0 0 20px;}
+.homePage .enProduit .puce {float:right;margin:6px 8px 16px 4px;}
+.homePage .enProduit .prix {float:right;width:80px;}
+.homePage .enProduit .prixB {margin-top:6px;font-size:14px;line-height:15px;color:#999999;}
+.homePage .enProduit .prixB, .homePage .enProduit .prixN {float:right;font-weight:bold;}
+.homePage .enProduit .prixB span {text-decoration:line-through;}
+.homePage .enProduit .prixB .sup {font-size:9px;line-height:9px;vertical-align:4px;}
+.homePage .enProduit .prixN {clear:right;font-size:24px;line-height:25px;color:#0280b8;}
+.homePage .enProduit .prixN .sup {font-size:12px;line-height:12px;vertical-align:8px;}
+.homePage .enProduit .prixN.solo {margin-top:15px;}
+.homePage .enProduit .flag {float:right;margin:1px 24px 0 0;}
+.homePage .enProduit .marque, .homePage .enProduit .reference, .homePage .enProduit .descriptif {padding:0 12px 0 9px;width:131px;}
+.homePage .enProduit .marque {clear:both;font-size:14px;line-height:15px;font-weight:bold;color:#111111;margin-bottom:4px;}
+.homePage .enProduit .reference {font-size:12px;line-height:15px;font-weight:bold;color:#666666;margin-bottom:4px;}
+.homePage .enProduit .descriptif {font-size:11px;line-height:15px;color:#666666;}
+
+/* /Home page */
+
+
+/* TemplateMenu */
+
+.templateMenu .contentStart {position:absolute;}
+.templateMenu #contenu {background:#FFFFFF;padding:149px 11px 9px 19px;width:950px;}
+.templateMenu .contentEnd {height:5px;background:#FFFFFF;}
+
+#menu {position:relative;float:left;width:214px;}
+#contenuTM {position:relative;float:right;width:720px;overflow:hidden;}
+
+/* /TemplateMenu */
+
+
+/* Menu */
+
+#menu .menuCeList {width:214px;height:189px;background:url(../img/merchandising/bgMenu2.png) repeat-y;margin-bottom:0px;}
+#menu .menuCeList .titre {padding:13px 10px 0 24px;background:url(../img/merchandising/puceGrise.png) no-repeat 11px 11px;font-size:14px;line-height:15px;font-weight:bold;color:#666666;text-transform:uppercase;}
+#menu .menuCeList ul {margin:0px;}
+#menu .menuCeList .categories {margin:15px 0 0 1px;width:210px;height:120px;overflow-y:scroll;}
+#menu .menuCeList .categories li {padding-left:11px;}
+#menu .menuCeList .categories a {color:#333333;}
+#menu .ems {margin-top:6px;}
+#menu #menu_bas{width:214px;height:7px;background-color:#ffffff;background:url(../img/merchandising/bgMenu_bas.png) no-repeat;}
+
+/* /Menu */
+
+
+/* Page Liste */
+
+.listPage .affiner, .listPage .affinerContent {float:left;width:714px;height:189px;background:url(../img/merchandising/bgAffiner.png) no-repeat;margin-bottom:4px;}
+.listPage .affinerContent {height:69px;}
+.listPage .affiner .filtres, .listPage .affinerContent .filtres {float:left;margin:1px 0 0 1px;width:710px;height:120px;overflow-y:scroll;}
+.listPage .affiner .filtres .titre, .listPage .affinerContent .filtres .titre {font-size:14px;line-height:15px;font-weight:bold;margin:13px 0 8px 11px;}
+
+.listPage .affiner .filtres ul, .listPage .affinerContent .filtres ul {float:left;margin:0 11px;}
+.listPage .affiner .filtres ul li input, .listPage .affinerContent .filtres ul li input {float:left;width:13px;height:13px;margin:1px 10px 1px 0;}
+.listPage .affiner .filtres ul li label, .listPage .affinerContent .filtres ul li label {float:left;}
+.listPage .affiner .filtres ul li, .listPage .affinerContent .filtres ul li{line-height:15px;clear:both;}
+.listPage .affiner .filtres ul li.filtre, .listPage .affinerContent .filtres ul li.filtre{font-size:12px;font-weight:bold;text-transform:capitalize;}
+
+.listPage .affiner .trier {float:left;overflow:hidden;margin:11px 20px 0 11px;}
+.listPage .affiner .trier .txt {float:left;font-size:12px;line-height:22px;color:#333333;}
+.listPage .affiner .trier select {float:left;max-width:180px;height:22px;}
+
+.listPage .affiner .afficher, .listPage .affinerContent .afficher {float:left;font-size:12px;line-height:22px;color:#333333;margin-top:11px;}
+.listPage .affinerContent .afficher {padding-left:11px;}
+.listPage .affiner .afficher a, .listPage .affinerContent .afficher a {color:#999999;text-decoration:underline;}
+.listPage .affiner .afficher a.bold, .listPage .affinerContent .afficher a.bold{color:#666666;text-decoration:none;}
+
+.listPage .affiner .resultats, .listPage .affinerContent .resultats {float:right;font-size:16px;line-height:22px;font-weight:bold;color:#333333;margin:11px 14px 8px 0;}
+.listPage .paginationG {clear:both;float:right;margin-right:14px;}
+
+.listPage .produit {float:left;width:234px;height:234px;background:url(../img/merchandising/bgProduit.png) no-repeat;margin:6px 6px 0 0;}
+.listPage .produit .visuel {float:left;margin:2px 0 0 2px;}
+.listPage .produit .puce {float:right;margin:6px 8px 16px 4px;}
+.listPage .produit .prix {float:right;width:80px;}
+.listPage .produit .prixB {margin-top:6px;font-size:14px;line-height:15px;color:#999999;}
+.listPage .produit .prixB, .listPage .produit .prixN {float:right;font-weight:bold;}
+.listPage .produit .prixB span {text-decoration:line-through;}
+.listPage .produit .prixB .sup {font-size:9px;line-height:9px;vertical-align:4px;}
+.listPage .produit .prixN {clear:right;font-size:24px;line-height:25px;color:#0280b8;}
+.listPage .produit .prixN .sup {font-size:12px;line-height:12px;vertical-align:8px;}
+.listPage .produit .prixN.solo {margin-top:15px;}
+.listPage .produit .flag {clear:both;float:right;margin:0 8px 11px 0;min-height:20px;}
+.listPage .produit .note {clear:both;float:right;margin:0 8px 0 0;font-size:9px;line-height:13px;color:#666666;overflow:hidden;height:26px;width:85px;}
+.listPage .produit .note li {float:left;text-align:center;width:17px;}
+.listPage .produit .note li.txt {clear:both;width:85px;text-align:right;}
+.listPage .produit .marque {clear:both;font-size:14px;line-height:15px;font-weight:bold;color:#111111;text-align:center;padding:2px 0;}
+.listPage .produit .description {font-size:12px;line-height:15px;font-weight:bold;text-align:center;height:48px;}
+.listPage .produit .voir {padding:0 3px 0 1px;text-align:center;}
+
+.listPage a.categorieLink{font-size:22px;color:#FFFFFF;}
+.listPage .categorie {float:left;width:234px;height:351px;background:url(../img/merchandising/bgCategorie.png) no-repeat;margin:0 0 0 0;text-align:center;}
+
+.listPage .paginationBas {clear:both;float:left;width:714px;height:26px;background:url(../img/merchandising/bgPagination.png) no-repeat;margin-top:6px;padding-top:6px;}
+.contentStart .bannerCategory {max-width:980px;max-height:220px;}
+
+.searchBanner {
+	width:940px;
+	height:99px;
+	margin: 15px 0px 0px 20px;
+	padding: 30px 0px 0px 0px;
+}
+
+.searchType {
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+
+.searchTabs {
+	height:99px;
+	display:inline-block;
+}
+
+.searchTab {
+	float:left;
+	width: 162px;
+	height:52px;
+	color: white;
+	font-weight: bold;
+	text-align:center;
+	vertical-align: middle;
+	font-size:12px;
+	padding-top: 12px;
+	display: block;
+}
+
+.searchTab.active {
+	background: url(../img/merchandising/searchTab_on.png) no-repeat;
+}
+
+.searchTab.disactive {
+	background: url(../img/merchandising/searchTab_off.png) no-repeat;
+}
+
+.contentList {
+	float:left;
+	width:714px;
+	background: white;	
+	background:url(../img/merchandising/bgContentList.png) repeat-y;
+}
+
+.contentList h1 {
+	text-align:center;
+	font-size:1.5em;
+	font-weight: bold;
+	margin:10px 0px;
+}
+
+.contentList li {
+	margin:5px 0px;
+}
+
+.contentList ul {
+	list-style-type: square;
+	margin-left: 20px;
+}
+
+
+/* /Page Liste */
+
+
+/* Page Produit */
+
+.productPage .contentStart {height:5px;background:#FFFFFF;}
+.productPage #contenu {background:#FFFFFF;padding:14px 17px 22px 19px;width:944px;}
+.productPage .contentEnd {height:5px;background:#FFFFFF;}
+
+.productPage .z1 {float:left;width:404px;overflow:hidden;margin:0 17px 25px 0;}
+.productPage .z2 {float:left;width:290px;}
+.productPage .z3 {float:right;width:204px;overflow:hidden;}
+
+.productPage .z1 .visuel {text-align:center;width:400px;height:400px;background:url(../img/merchandising/bgVisuel.png) no-repeat;padding:1px 3px 3px 1px;}
+.productPage .z1 .visuelMini {text-align:center;float:left;width:50px;height:50px;background:url(../img/merchandising/bgVisuelMini.png) no-repeat;padding:1px 3px 3px 1px;}
+.productPage .z1 .visuel img {max-width: 400px;max-height: 400px;}
+.productPage .z1 .visuelMini img {max-width: 50px;max-height: 50px;}
+		
+.productPage .z1 .zoom {float:right;margin:13px 13px 0 0;}
+
+.productPage .z2 .logo {margin-top:1px;}
+.productPage .z2 .designation {margin-top:4px;font-size:14px;line-height:15px;font-weight:bold;color:#666666;}
+.productPage .z2 .accroche {margin-top:10px;font-size:14px;line-height:14px;font-weight:bold;font-style:italic;color:#ff7f00;}
+.productPage .z2 .description {margin-top:12px;font-size:12px;line-height:14px;color:#666666;}
+.productPage .z2 .note {margin:22px 0 0 0;font-size:12px;line-height:24px;color:#666666;overflow:hidden;height:24px;width:280px;}
+.productPage .z2 .note li {float:left;text-align:left;width:28px;height:24px;}
+.productPage .z2 .note li.txt {width:130px;padding-left:10px;}
+.productPage .z2 .avis {margin-top:12px;font-size:12px;line-height:18px;color:#666666;}
+.productPage .z2 .avis a {color:#666666;text-decoration:underline;}
+
+.productPage .z3 .navigation {float:right;margin:1px 3px 20px 0;color:#eeeeee;}
+.productPage .z3 .navigation .precedent, .productPage .z3 .navigation .suivant {float:left;color:#666666;text-decoration:underline;}
+.productPage .z3 .navigation .precedent {background:url(../img/merchandising/navP.png) no-repeat left center;padding:0 8px 0 10px;}
+.productPage .z3 .navigation .suivant {background:url(../img/merchandising/navS.png) no-repeat right center;padding:0 10px 0 8px;}
+.productPage .z3 .navigation .noPrecedent, .productPage .z3 .navigation .noSuivant {float:left;color:#cccccc;text-decoration:none;}
+.productPage .z3 .navigation .noPrecedent {padding:0 8px 0 10px;}
+.productPage .z3 .navigation .noSuivant {padding:0 10px 0 8px;}
+.productPage .z3 .bloc {clear:both;width:204px;height:358px;}
+.productPage .z3 .bloc .flag {float:left;margin:1px;}
+
+.productPage .z3 .bloc .puce {float:right;margin:21px 13px 8px 5px;}
+.productPage .prix {float:right;width:100px;margin-top:21px;}
+.productPage .prixB {margin-top:2px;font-size:20px;line-height:21px;color:#999999;}
+.productPage .prixB, .productPage .prixN {float:right;font-weight:bold;}
+.productPage .prixB span {text-decoration:line-through;}
+.productPage .prixB .sup {font-size:10px;line-height:10px;vertical-align:8px;}
+.productPage .prixN {clear:right;margin-top:2px;font-size:36px;line-height:37px;color:#0280b8;}
+.productPage .prixN .sup {font-size:18px;line-height:18px;vertical-align:13px;}
+.productPage .prixN.solo {margin-top:13px;}
+
+.productPage .z3 .bloc .eco {clear:both;float:right;text-align:right;width:180px;margin:0 13px 0 0;height:14px;font-size:10px;line-height:14px;color:#999999;}
+.productPage .z3 .bloc .stock {clear:both;float:right;margin:0 13px 22px 0;text-transform:uppercase;height:14px;font-size:10px;line-height:14px;font-weight:bold;}
+.productPage .z3 .bloc .stock .vert {color:#8bbf2a;}
+.productPage .z3 .bloc .stock .rouge {color:#bf2a2a;}
+.productPage .z3 .bloc .acheter {clear:both;padding:0 3px 0 1px;text-align:center;margin-bottom:45px;}
+.productPage .z3 .bloc .outils {padding:0 3px 0 1px;text-align:center;}
+.productPage .z3 .bloc .outils img {margin-bottom:8px;}
+
+.productPage .onglets {clear:both;margin:0 3px 0 1px;width:940px;height:34px;background:#CED4E1;}
+.productPage .onglets li {float:left;border-right:1px solid #0c0c0c;height:34px;cursor:pointer;font-size:12px;line-height:34px;font-weight:bold;color:#2157A3;padding:0 10px;}
+.productPage .onglets li.on {color:#fe8300;background-color:#ffffff;}
+
+.productPage .ongletsC {clear:both;margin:0 3px 0 1px;background-color:#ffffff;padding:20px 10px;overflow:hidden;}
+.productPage .ongletsC .onglet ul {margin:0;}
+
+.productPage .ongletsC .onglet .commentaire {float:left;margin:0 10px 0 0;width:110px;}
+.productPage .ongletsC .onglet .commentaireD {float:left;margin:0 0 10px 0;width:800px;background-color:#f5f5f5;}
+.productPage .ongletsC .onglet .selling {float: left;border : 5px white solid;}
+
+/* /Page Produit */
+
+
+
+/* Page Produit textile */
+#colorChoice, #sizeChoice {clear:both;}
+.productPage .z2 .selectAttribute {margin-top:20px;padding:5px;text-align:center;font-size:12px;line-height:18px;color:#666666;}
+
+/* /Page Produit textile */
+
+
+
+
+/* Tunnel de commande (Global) */
+
+.panier .contentStart {height:5px;background:#FFFFFF;}
+.panier #contenu {background:#FFFFFF;padding:14px 17px 22px 19px;width:944px;}
+.panier .contentEnd {height:5px;background:#FFFFFF;}
+
+#etapes {overflow:hidden; width:504px; margin:auto; margin-bottom:20px;}
+.etapes_separations {float:left; width:96px; height:52px; background-image:url("../img/tunnel/BtEtape_ligne.png"); background-repeat:repeat-x;}
+
+.barretitre {clear:both; height:35px; background-color:#CED4E1;}
+.barretitre span {padding:0 0 0 13px; line-height:35px; font-size:12px; font-weight:bold; color:#2157A3;}
+
+.cadregris {clear:both; margin:0 0 20px 0; padding-bottom:1px;}
+.cadregris p input[type=text] {float:left;border:1px solid #aaadb2;margin:0;padding:1px;height:19px;font-size:12px;line-height:19px;font-style:italic;color:#cccccc;}
+.cadregris p input[type=text].on {font-style:normal;color:#666666;}
+.cadregris p input[type=image] {float:left;margin:1px 0 0 6px}
+
+.grand {width:650px;}
+.petit {width:270px;}
+
+.ligne {overflow:hidden; padding:10px; background-color:#F5F5F5;}
+.boutonsbas {clear:both; overflow:hidden; margin:10px 0; width:650px; color:#FFFFFF;}
+.zonebas {width:350px;}
+
+.bt_retour {display:block; float:left; width:94px; height:25px; background-image:url("../img/tunnel/Bt_retour.png"); background-repeat:no-repeat; font-size:0px; text-decoration:none; color:#CCCCCC; text-align:center;}
+.bt_suivant {display:block; float:right; width:194px; height:25px; background-image:url("../img/tunnel/Bt_suivant.png"); background-repeat:no-repeat; font-size:0px; text-decoration:none; color:#BCBCBC; text-align:center;}
+.bt_annuler {display:block; margin:0 0 0 70px; width:104px; height:20px; background-image:url("../img/tunnel/Bt_annuler.png"); background-repeat:no-repeat; font-size:0px; text-decoration:none; color:#CCCCCC; text-align:center;}
+.bt_modifier {display:block; float:right; width:74px; height:20px; background-image:url("../img/tunnel/Bt_modifier.png"); background-repeat:no-repeat; font-size:0px; text-decoration:none; color:#CCCCCC; text-align:center;}
+.bt_suivant_submit {width:194px;margin-left:60px; height:25px; background-image:url("../img/tunnel/Bt_suivant.png"); background-color: inherit; background-repeat:no-repeat; border:0; font-size:0px; color:#BCBCBC; cursor:pointer;}
+/*.bt_suivant_submit_delivery {width:194px;margin-left:60px; height:25px; background-image:url("../img/tunnel/Bt_suivant.png"); background-color: inherit; background-repeat:no-repeat; border:0; font-size:0px; color:#BCBCBC; cursor:pointer;}*/
+.bt_valider {width:84px; height:22px; background-image:url("../img/tunnel/Bt_valider.png"); background-repeat:no-repeat; background-color:#F5F5F5; font-size:0px; color:#898989; border:none; cursor:pointer;}
+
+/* /Tunnel de commande (Global) */
+
+
+/* Tunnel de commande (Commande) */
+
+.commande .separation {overflow:hidden; padding:3px 0; border-bottom:solid 2px #404040; background-color:#F5F5F5;}
+.commande .mini {font-size:8px;}
+.commande .corbeille {display:block; margin:0 0 0 13px; width:15px; height:19px; background-image:url("../img/tunnel/Bt_corbeille.png"); background-repeat:no-repeat; font-size:0px; text-decoration:none; color:#BCBCBC;}
+.commande .bleu {background-color:#31A1CE;}
+.commande .gris {background-color:#404040;}
+.commande .erreur {clear:both; padding:10px 0 0 0; font-style:italic; font-size:9px; color:#FF0000;}
+.commande .traitbas {overflow:hidden; padding:0 10px 10px 10px; height:20px; background-image:url("../img/tunnel/Bt_separation.png"); background-repeat:repeat-x; background-color:#F5F5F5;}
+
+.commande .totaux {float:right; width:350px; background-color:#F5F5F5;}
+.commande .totaux div {overflow:hidden; padding:0 10px; border-bottom:solid 1px #404040;}
+
+.commande .ligne p {margin:0; padding:0;}
+.commande .ligne label {font-weight:bold;}
+.commande .ligne select {margin:0 20px; width:360px;}
+.commande .ligne input[type=submit] {width:84px; height:22px; background-image:url("../img/tunnel/Bt_valider.png"); background-repeat:no-repeat; background-color:#F5F5F5; font-size:0px; color:#898989; border:none; cursor:pointer;}
+.commande p input[type=text] {width:200px;}
+
+.commande .colonne_intitule {float:left; padding:5px; width:290px; border-right:solid 1px #AAAAAA;}
+.commande .colonne_unitaire {float:left; padding:5px; width:100px; border-right:solid 1px #AAAAAA; border-left:solid 1px #FFFFFF;}
+.commande .colonne_quantite {float:left; padding:5px; width:60px; border-right:solid 1px #AAAAAA; border-left:solid 1px #FFFFFF;}
+.commande .colonne_prix {float:left; padding:5px; width:100px; border-right:solid 1px #AAAAAA; border-left:solid 1px #FFFFFF;}
+.commande .colonne_corbeille {float:left; padding:5px; border-left:solid 1px #FFFFFF;}
+.commande .colonne_image {float:left; margin:0 5px 0 0;}
+
+/* /Tunnel de commande (Commande) */
+
+
+/* Tunnel de commande (Livraison) */
+
+.livraison .colonne_intitule {float:left; margin:0 0 0 70px; width:250px;}
+.livraison .colonne_date {float:left; width:170px;}
+.livraison .colonne_prix {float:left; width:100px;}
+
+.livraison .separation {clear:both; border-bottom:solid 2px #FFFFFF; background-color:#F5F5F5;}
+.livraison .titre {font-size:14px; font-weight:bold;}
+.livraison .erreur {clear:both; font-size:9px; color:#FF0000;}
+.livraison .espace {clear:both; padding:10px 0 0 0;}
+.livraison .horaires td {text-align: center;}
+
+.livraison .input_petit {width:200px;}
+.livraison .input_grand {width:350px;}
+
+.livraison .clear {overflow:hidden; margin:0; padding:0;}
+.livraison .clear p {margin:5px 0 0 0; padding:0;}
+
+.livraison .label {display:block; margin:0 10px 0 0; width:100px;}
+.livraison .label_petit {margin:0 30px 0 0;}
+
+.livraison .bloc {clear:both; overflow:hidden; margin:0 0 10px 0;}
+.livraison .bloc p {margin:0; padding:0;}
+.livraison .bloc_droite {margin:0 0 0 30px;}
+.livraison .bloc .multiple_grand {width:300px; height:100px;}
+
+.livraison .lien_noir {color:#000000; text-decoration:underline;}
+
+/* /Tunnel de commande (Livraison) */
+
+/* Tunnel de commande (Paiement) */
+
+.paiement .colonne_intitule {float:left; margin:0 0 0 70px;}
+.paiement .separation {clear:both; border-bottom:solid 2px #404040; background-color:#F5F5F5;}
+.paiement .titre {font-size:14px; font-weight:bold;}
+.paiement .erreur {clear:both; font-size:9px; color:#FF0000;}
+.paiement .espace {clear:both; padding:10px 0 0 0;}
+.paiement .marge {width:10px; text-align:center;}
+
+.paiement .input_moyen {width:60px;}
+.paiement .input_grand {width:115px;}
+
+.paiement .clear {overflow:hidden; margin:0; padding:0;}
+.paiement .clear p {margin:5px 0 0 0; padding:0;}
+
+.paiement .label {display:block; margin:0 10px 0 0; width:100px;}
+.paiement .label_petit {margin:0 30px 0 0;}
+
+.paiement .bloc {clear:both; overflow:hidden; margin:0 0 10px 0;}
+.paiement .bloc p {margin:0; padding:0;}
+.paiement .bloc_droite {margin:0 0 0 30px;}
+.paiement .bloc .multiple_grand {width:300px; height:100px;}
+
+.paiement .lien_noir {color:#000000; text-decoration:underline;}
+
+.paiement #submitCheckboxType {display:none;}
+
+/* /Tunnel de commande (Paiement) */
+
+
+
+
+
+
+
+/* storeLocator */
+.storeLocator #contenu {background:#FFFFFF;padding:14px 17px 22px 19px;width:944px}
+.storeLocator #contenu .infos {color:white;}
+.moyen {width:460px;}
+.or {margin: 20px 0px;}
+.googleMapsDiv {width:440px;height:252px;}
+.searchShopLink, .toShopDetails a {color:white;}
+.resultShopList {overflow:auto;height:273px;width:440px;}
+.rowShop1 {background:#dddddd;}
+.row2 {padding-top:4px;}
+.row1 {vertical-align:middle;width:100%;}
+
+.submitSearch, .toShopDetails {background:url(../img/storeLocator/button.png) no-repeat; width:194px;height:25px;color:white;text-transform:uppercase;font-weight:bold;padding: 6px 0px 0px 0px;cursor:pointer;}
+.submitSearch {margin-top:15px;padding-left:30px;}
+.toShopDetails {margin-left:5px;}
+.toShopDetails a {padding-left: 30px;}
+#localisez_mag #inputError {display:none; color:red; margin-right:116px; text-align:right;}
+#localisez_mag .error_img {display:inline-block;}
+#localisez_mag .error_img img { margin-left:5px; width:15px; height:15px; display:none; }
+#localisez_mag .error_img img.valider {display:block;}
+#directionDuration {background: inherit;padding:5px;color:red;position:absolute;z-index:999;margin-left:35px;visibility:hidden;font-weight:bold;}
+
+.resultShopSearch {font-weight:bold;padding:0px;padding-left:5px;}
+
+
+.openingHours {padding: 0px 5px 0px 15px;}
+.openingHours, .closingHours {text-align:right;}
+
+
+/* /storeLocator */

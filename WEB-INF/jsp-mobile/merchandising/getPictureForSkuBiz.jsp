@@ -1,0 +1,1 @@
+<img src="${catalogPath}/${imagePath}" width="388" height="388" border="0" />

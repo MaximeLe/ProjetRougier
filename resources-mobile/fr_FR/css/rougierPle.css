@@ -1,0 +1,75 @@
+/*-------------------------------
+
+[Rougier & Ple CSS]
+
+Auteur : Hervé FRACKOWIAK et Fanny VKB
+Framework : Hydra
+Version : 1.00
+Date : 06/12/2011
+
+-------------------------------*/
+
+
+/* Generique */
+@font-face {
+    font-family: 'ITC_Avant_GardeBold';
+    src: url('font/itc__avant__garde_bold.eot');
+    src: url('font/itc__avant__garde_bold.eot?#iefix') format('embedded-opentype'),
+         url('font/itc__avant__garde_bold.woff') format('woff'),
+         url('font/itc__avant__garde_bold.ttf') format('truetype'),
+         url('font/itc__avant__garde_bold.svg#ITC_Avant_GardeBold') format('svg');
+}
+@font-face {
+    font-family: 'AvantGardeLTMediumBold';
+    src: url('font/itc_avant_garde_gothic--lte52013.eot');
+    src: url('font/itc_avant_garde_gothic--lte52013.eot?#iefix') format('embedded-opentype'),
+         url('font/itc_avant_garde_gothic--lte52013.woff') format('woff'),
+         url('font/itc_avant_garde_gothic--lte52013.ttf') format('truetype'),
+         url('font/itc_avant_garde_gothic--lte52013.svg#AvantGardeLTMediumBold') format('svg');
+}
+
+@font-face {
+    font-family: 'avantgarde_bk_btbook';
+    src: url('font/avant_garde_book_bt-webfont.eot');
+    src: url('font/avant_garde_book_bt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/avant_garde_book_bt-webfont.woff') format('woff'),
+         url('font/avant_garde_book_bt-webfont.ttf') format('truetype'),
+         url('font/avant_garde_book_bt-webfont.svg#avantgarde_bk_btbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {background:#fff;font:11px/13px Arial, Helvetica, sans-serif; color:#666666;margin:0;padding:0;/*max-width:800px;min-width:306px;*/width:100%}
+#fondsite{/*border:10px solid black;*//*max-width:800px;min-width:306px;*/width:100%;/* margin:5% 5% 5% 5%;*/}
+
+
+/***	 HEADER		***/
+
+#header{/*max-width:800px;min-width:306px;*/margin : 15px 15px 15px 15px;}
+	#header .image1{/*border:1px solid #00ff00;*/width:165px;overflow:hidden;text-align:center;min-height:34px;}
+	#header .image2{/*border:1px solid #00ff00;*/height:42px;overflow:hidden;text-align:center;}
+	#header .image3{/*border:1px solid #00ff00;*/height:42px;overflow:hidden;text-align:center;}
+	#header .logo{/*border:1px solid #fb0404;*/width:51%;position:relative;margin-top:1px;}
+	#header .logo img{/*max-width:800px;*/width:100%;height:100%;text-align:center;}
+	#header .comptec{/*border:1px solid #d56a24;*/width:22%;height:40px;position:absolute;right:23%;top:15px;}
+	#header	.comptec img{margin:4px 34px;width:34px;height:34px;}
+	#header .panier{/*border:1px solid #3131c8;*/width:22%;height:40px;position:absolute;right:15px;top:15px;}
+		#header .panier .nbArticles{color:#ffffff;font-size:10px;font-family:AvantGardeLTMediumBold;position:absolute;top:4px;right:3px;text-align:center;background:url('../img/common/picto-panier.png') no-repeat 0 0;width:32px;height:32px;padding:14px 0 0 0px;}
+		#header .image .imgCentreCompte{margin:9% 0 0 0;text-align:center;}
+		#header .image .imgCentrePanier{position:absolute;top:14%;right:37%;z-index:1;}
+		
+	
+#header .blocRecherche {/*border:1px solid #00ffff;*/height:60px;position:relative;margin-top:13px;}		
+#header .blocRecherche .recherche{position:absolute;top:0;right:0;left:0;width:auto;font-family:avantgarde_bk_btbook;font-size:16px;border:1px solid #ef393f;}
+#header .blocRecherche .recherche input[type=submit]{cursor:pointer;border:0;color:#ffffff;text-align:center;background:url('../img/common/btn_search.png') no-repeat;position:absolute;right:1%;top:23%;}
+#header .blocRecherche .recherche #recherche{height:44px;border:0;width:100%;padding-left:61px;background:url('../img/common/loupe.gif') no-repeat 7px center, url('../img/common/btn_search.png') no-repeat right;background-size: 24px,contain;}
+
+
+/***	 NAVIGATION		***/
+
+#navigation{}
+#navEntry_0 .title{border:1px solid black;padding:15px;font-size:22px;}
+#navEntry_0 .sousNav .content li{border-left: 1px solid black;border-right: 1px solid black;padding:15px;color:black;}
+#navEntry_0 .sousNav .content li:last-child{border-bottom: 1px solid black;}
+ 
+/* #global{border:1px solid #ec1318;} */

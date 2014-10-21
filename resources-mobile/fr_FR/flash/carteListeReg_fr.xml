@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<liste_regions>
+	<region id="1" nom="Alsace" lien="" />
+	<region id="2" nom="Aquitaine" lien="" />
+	<region id="3" nom="Auvergne" lien="" />
+	<region id="4" nom="Basse Normandie" lien="" />
+	<region id="5" nom="Bourgogne" lien="" />
+	<region id="6" nom="Bretagne" lien="" />
+	<region id="7" nom="Centre" lien="" />
+	<region id="8" nom="Champagne Ardenne" lien="" />
+	<region id="9" nom="Corse" lien="" />
+	<region id="10" nom="Franche-Comté" lien="" />
+	<region id="11" nom="Guadeloupe" lien="" />
+	<region id="12" nom="Guyane" lien="" />
+	<region id="13" nom="Haute Normandie" lien="" />
+	<region id="14" nom="Ile de  france" lien="" />
+	<region id="15" nom="La réunion" lien="" />
+	<region id="16" nom="Languedoc Roussillon" lien="" />
+	<region id="17" nom="Limousin" lien="" />
+	<region id="18" nom="Lorraine" lien="" />
+	<region id="19" nom="Martinique" lien="" />
+	<region id="20" nom="Midi Pyrénées" lien="" />
+	<region id="21" nom="Nord pas de calais" lien="1" />
+	<region id="22" nom="Pays de la Loire" lien="" />
+	<region id="23" nom="Picardie" lien="" />
+	<region id="24" nom="Poitou Charentes" lien="" />
+	<region id="25" nom="Provence Alpes Côtes d'Azur" lien ="" />
+	<region id="26" nom="Rhônes Alpes" lien="" />
+</liste_regions>
+

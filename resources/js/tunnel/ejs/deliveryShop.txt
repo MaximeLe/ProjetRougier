@@ -1,0 +1,94 @@
+<input type="hidden" name="delivery" value="shop"/>
+<div class="separation"></div>
+	<div class="cadregris grand">
+<div class="barretitre"><span>Mon magasin</span></div>
+								<div class="ligne">
+									<div class="floatLeft">
+										<span class="bold"><%= shopName %></span><br />
+										<%= addressLine1  %> 
+										<% if(addressLine1 != null && addressLine1 != ''){%>
+											<br /> 
+										<%}%>
+										
+										
+										<%= addressLine2 %> 
+										<% if(addressLine2 != null && addressLine2 != ''){%>
+											<br /> 
+										<%}%>
+										
+										<%= addressLine3 %> 										
+										<% if(addressLine3 != null && addressLine3 != ''){%>
+											<br /> 
+										<%}%>
+										
+										<%= zipCode %> <%= city %><br />
+										<%= comment1 %>
+										<br /><br />
+										<span class="bold">Horaires d’ouverture :</span><br />
+										
+										
+										<% if(DAY1 != null){ %>
+											Lundi :  <%= openingHoursAM_DAY_1%> - <%= closingHoursAM_DAY_1%> / <%= openingHoursPM_DAY_1%> - <%= closingHoursPM_DAY_1%><br />
+										<%}else{%>
+											Lundi : Fermé					
+										<%}%>
+										
+										<% if(DAY2 != null){ %>
+											Mardi : <%= openingHoursAM_DAY_2%> - <%= closingHoursAM_DAY_2%> / <%= openingHoursPM_DAY_2%> - <%= closingHoursPM_DAY_2%><br />
+										<%}else{%>
+											Mardi : Fermé					
+										<%}%>
+										
+										<% if(DAY3 != null){ %>
+											Mercredi : <%= openingHoursAM_DAY_3%> - <%= closingHoursAM_DAY_3%> / <%= openingHoursPM_DAY_3%> - <%= closingHoursPM_DAY_3%><br />
+										<%}else{%>
+											Mercredi : Fermé					
+										<%}%>
+										
+										<% if(DAY4 != null){ %>
+											Jeudi : <%= openingHoursAM_DAY_4%> - <%= closingHoursAM_DAY_4%> / <%= openingHoursPM_DAY_4%> - <%= closingHoursPM_DAY_4%><br />
+										<%}else{%>
+											Jeudi : Fermé					
+										<%}%>
+											 
+										<% if(DAY5 != null){ %>
+											Vendredi : <%= openingHoursAM_DAY_5%> - <%= closingHoursAM_DAY_5%> / <%= openingHoursPM_DAY_5%> - <%= closingHoursPM_DAY_5%><br />
+										<%}else{%>
+											Vendredi : Fermé					
+										<%}%>
+										
+										<% if(DAY6 != null){ %>
+											Samedi : <%= openingHoursAM_DAY_6%> - <%= closingHoursAM_DAY_6%> / <%= openingHoursPM_DAY_6%> - <%= closingHoursPM_DAY_6%><br />
+										<%}else{%>
+											Samedi : Fermé					
+										<%}%>
+										
+										<% if(DAY7 != null){ %>
+											Dimanche : <%= openingHoursAM_DAY_7%> - <%= closingHoursAM_DAY_7%> / <%= openingHoursPM_DAY_7%> - <%= closingHoursPM_DAY_7%><br />
+										<%}else{%>
+											Dimanche : Fermé					
+										<%}%>
+										
+									</div>
+									<div class="floatRight">
+										<div class="bloc">
+											<span class="bold">Trouvez un autre magasin par code postal</span> <span class="erreur">*</span><br />
+											<p><label for="cp"></label><input type="text" name="cp" id="cp" class="input_petit" value="" /><input onclick="javascript:clickSearchShop();return false;" id="searchShop" name="searchShop" type="image" src="<%= contextPath %>/resources/<%= codeIsoLang %>/img/common/searchOk.png" value="ok"></p>
+										</div>
+										<div id="bloc_search_shop" name="bloc_search_shop" class="bloc">
+											Magasins trouv&eacute;s <span class="erreur">*</span>
+											<p><select name="selectShop" id="selectShop" class="multiple_grand" multiple></option></select></p>
+										</div>
+									</div>
+									<div class="espace erreur">*Champs obligatoires</div>
+								</div>
+								<!-- Boutons -->
+								<div class="boutonsbas">
+									<p class="floatRight zonebas">
+										<a href="<%= contextPath %>/cart.html" class="bt_retour">Retour</a>
+										<input type="submit"
+												value="Etape suivante" class="bt_suivant_submit_delivery" />
+									</p>
+								</div>		
+										
+</div>												

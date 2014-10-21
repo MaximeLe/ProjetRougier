@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context path="/VAD" reloadable="false" docBase="VAD" >
+	<ResourceLink name="jdbc/frameworkReadOnly" global="jdbc/frameworkReadOnly" type="javax.sql.DataSource" />
+	<ResourceLink name="jdbc/frameworkReadWrite" global="jdbc/frameworkReadWrite" type="javax.sql.DataSource" />
+	<ResourceLink name="baseURLhttp" global="baseURLhttp" type="java.lang.String" />
+</Context>

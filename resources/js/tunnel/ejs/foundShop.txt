@@ -1,0 +1,11 @@
+Magasins trouv&eacute;s <span class="erreur">*</span>
+
+<p>
+	
+	<select onchange="javascript:changeSelectionShop()" name="selectShop" id="selectShop" class="multiple_grand" multiple>		
+		<% for (var i=0; i<this.length; i++){ %>
+    	<option value="<%= this[i].shopId %>"> <%= this[i].shopName + ' ' + this[i].zipCode + ' '  + this[i].city %> </option>
+		<% } %>
+	</select>
+	
+</p>

@@ -1,0 +1,46 @@
+
+<div class="interieur_contenu_coordonnees">
+							<div class="coordonnees_droite">
+									
+									<label for="wording"><%= $.i18n._("modif_add_nom_add") %></label><span class="rouge">*</span><br/>
+									
+									<% var isDisabledAddr = ''; %>
+									<% if(addressId == null) {%>
+									<% isDisabledAddr = 'disabled="disabled"'; %>
+									<%}%>
+									<label id="civilite"><%= $.i18n._("modif_add_civilite") %></label><span class="rouge">*</span><br/>
+									<label for="nom"><%= $.i18n._("modif_add_nom") %></label><span class="rouge">*</span><br/>
+									<label for="prenom"><%= $.i18n._("modif_add_prenom") %></label><span class="rouge">*</span><br/>
+									<label for="adresse"><%= $.i18n._("modif_add_adresse") %></label><span class="rouge">*</span><br/>
+									<label for="complement_adresse1"><%= $.i18n._("modif_add_complement_adresse") %></label><br/>
+									<label for="code_postal"><%= $.i18n._("modif_add_code_postal") %></label><span class="rouge">*</span><br/>							
+									<label for="ville"><%= $.i18n._("modif_add_ville") %></label><span class="rouge">*</span><br/>	
+									<label for="phone"><%= $.i18n._("modif_add_phone") %></label><br/>											
+									<br/>
+									<span id="champs_obligatoires" class="rouge">*Champs obligatoires</span>
+							</div>
+							
+							
+							<div class="coordonnees_gauche">	
+								<% if(addressId != null){%>
+								&nbsp;<input type="text" value="<%=wording %>" name="wording" id="wording" size="50"/><br/>																									
+								<%}else{%>
+								&nbsp;<input <%=isDisabledAddr %> type="text" value="Adresse du compte" size="50"/><br/>
+								<%}%>
+								
+								&nbsp;<div><input <%=isDisabledAddr %> type="radio" name="codeCivilityId" value="1" <% if(codeCivilityId==1){%>checked="checked"<%}%>  id="m" /><label for="m"><%= $.i18n._("modif_add_civilite_1") %></label>&nbsp;&nbsp;<input <%=isDisabledAddr %>  type="radio" name="codeCivilityId" value="2" <% if(codeCivilityId==2){%>checked="checked"<%}%> id="mme" /><label for="mme"><%= $.i18n._("modif_add_civilite_2") %></label>&nbsp;&nbsp;<input <%=isDisabledAddr %>  type="radio" <% if(civility==3){%>checked="checked"<%}%> name="civility" value="3" id="melle" /><label for="melle"><%= $.i18n._("modif_add_civilite_3") %></label></div><br/>
+								&nbsp;<input  <%=isDisabledAddr %> type="text" value="<%=lastName %>" name="lastName" id="nom" size="50"/><br/>
+								&nbsp;<input <%=isDisabledAddr %>  type="text" value="<%=firstName %>" name="firstName" id="prenom" size="50"/><br/>
+								&nbsp;<input <%=isDisabledAddr %>  type="text" value="<%=addressLine1 %>" name="addressLine1" id="adresse" size="50"/><br/>
+								&nbsp;<input <%=isDisabledAddr %>  type="text" value="<%=addressLine2 %>" name="addressLine2" id="complement_adresse1" size="50"/><br/>
+								
+								&nbsp;<input <%=isDisabledAddr %>  type="text" value="<%=zipCode %>" name="zipCode" id="code_postal" size="50"/><br/>
+								&nbsp;<input <%=isDisabledAddr %>  type="text" value="<%=city %>" name="city" id="ville" size="50"/><br/>
+								&nbsp;<input <%=isDisabledAddr %>  type="text" value="<%=phone %>" name="phone" id="phone" size="50"/><br/>
+								
+								
+							</div>
+
+						</div>
+						
+						

@@ -1,0 +1,84 @@
+/*	--------------------------------------------------------------------
+	[common.css]
+
+	Table of Contents
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+	1. Display
+	2. Float and align
+	3. Clear me plz!
+	4. Text decoration
+	5. Text align
+	6. Typographic style
+
+--------------------------------------------------------------------	*/
+
+
+/*	--------------------------------------------------------------------	
+	1. Display 
+--------------------------------------------------------------------	*/
+
+.displayBlock { display: block; }
+.displayNone { display: none; }
+.displayInline { display: inline; }
+.listInline li { display: inline; }
+
+/*	--------------------------------------------------------------------	
+	2. Float and Align 
+--------------------------------------------------------------------	*/
+
+.floatRight { float: right; }
+.floatLeft {color:#666666;float: left; }
+.center { margin: 0 auto; }
+.borderBottom { border-bottom: 1px solid; }
+
+/*	--------------------------------------------------------------------	
+	3. Clear me plz! 
+--------------------------------------------------------------------	*/
+
+.clear { clear: both; }
+
+/*	--------------------------------------------------------------------	
+	4. Text decoration
+--------------------------------------------------------------------	*/
+
+.underline { text-decoration: underline; }
+.strike { text-decoration: line-through; }
+
+/*	--------------------------------------------------------------------	
+	5. Text align
+--------------------------------------------------------------------	*/
+
+.alignLeft { text-align: left; }
+.alignRight { text-align: right; }
+.alignCenter { text-align: center; }
+.alignJustify { text-align: justify; }
+
+/*	--------------------------------------------------------------------	
+	6. Typographic style
+--------------------------------------------------------------------	*/
+
+.bold { font-weight: 900; }
+.light { font-weight: 100; }
+.italic { font-style: italic; }
+.smallcaps { font-variant: small-caps; }
+.expanded { letter-spacing: .5em; }
+.condensed { letter-spacing: -.1em; }
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+
+/*	--------------------------------------------------------------------	
+	7. Overflow(s)
+--------------------------------------------------------------------	*/
+
+.hidden { overflow:hidden; }
+.auto { overflow:auto; }
+.scroll { overflow:scroll; }
+
+/*	--------------------------------------------------------------------	
+	8. Color
+--------------------------------------------------------------------	*/
+.black {color:#000000;}
+.white {color:#FFFFFF;}
+.error {color:red;}
+

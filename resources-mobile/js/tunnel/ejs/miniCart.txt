@@ -1,0 +1,37 @@
+
+<p class="floatLeft">
+Panier (<span id="receiptCountItem"></span> articles)<br />
+				
+	
+<% if(giftCounter > 0){ %>
+		 Cadeaux (<%= giftCounter%> articles)<br />
+<%}%>				
+					
+Frais de port<br />
+<% if(sumOfDiscountShippingFee != 0){ %>
+		Remise frais<br/>
+<%}%>
+<br />
+<span class="titre">TOTAL À REGLER</span>
+</p>
+<p class="floatRight bold alignRight">
+					
+	<%= (formatPrice(subTotal-sumOfCartDiscount-sumOfCartGift)) %>
+	<% if(giftCounter>0) { %>
+		<% if(sumOfCartGift >= 0.01) {%>
+			<%= formatPrice(sumOfCartGift) %>
+		<%}else{%>
+			OFFERT
+		<%}%>
+		
+	<%}%>
+	<br/>
+	<%= formatPrice(fee) %>
+	<br />
+					
+	<% if(sumOfDiscountShippingFee != 0){ %>
+		&#45;<%= formatPrice(sumOfDiscountShippingFee) %> <br />
+	<%}%>
+		<br />
+	<span class="titre"><%= formatPrice(total) %> </span>
+</p>

@@ -1,0 +1,666 @@
+.rouge{color:#e2001a}
+.gras{font-weight:bold}
+.italic{font-weight:italic;}
+
+select option.grise{color: #CCCCCC;font-size: 12px;font-style: italic;}
+
+#menu .menu{height:339px;margin-left:0px;padding-left:0px;padding-right:0px;line-height:22px;margin-top:10px;background: url("../img/merchandising/bgMenu2.png") repeat-y scroll 0 0 transparent;}
+#menu .menu ul {margin:0px;}
+#menu .menu ul li{list-style-type:disc; margin-left:28px;}
+#menu .menu ul li a{font-size:11px;color:#5f5f5f}
+#menu .menu ul li.active{color:orange;}
+#menu .menu ul li.active a{color:orange;font-weight:bold}
+#menu .menu .titre {padding:10px 0px 10px 24px;border-bottom:1px solid black;width:177px;font-weight:bold;color:#666666;text-transform:uppercase;font-size:14px;background:url(../img/merchandising/puceGrise.png) no-repeat 11px 11px;}
+#menu .menu span{font-weight:bold;margin-top:15px;margin-left:12px;font-size:12px;color:#333333}
+#menu .menu span:first{margin-top:20px}
+.templateMenu #contenu {padding-top:0}
+
+
+
+#menu .menu_titre{height:43px;margin-left:0px;padding-left:0px;padding-right:0px;line-height:22px;margin-top:10px;background: url("../img/merchandising/bgMenu2.png") repeat-y scroll 0 0 transparent;}
+#menu .menu_titre .titre {padding:13px 10px 0 24px;background:url(../img/merchandising/puceGrise.png) no-repeat 11px 11px;font-size:14px;line-height:15px;font-weight:bold;color:#666666;text-transform:uppercase;padding-bottom:18px;border-bottom:1px solid black;width:177px}
+#menu .menu_titre span{font-weight:bold;margin-top:15px;margin-left:12px;font-size:12px;color:#333333}
+#menu .menu_titre span:first{margin-top:20px}
+
+
+
+
+/* attention */
+
+/*------------------------------Generalite clients ---------------------------------------------*/
+#clients #contenu_interieur{width:712px; float:left;height:auto;font-family:Arial;font-size:12px;padding-left:18px}
+#clients .coordonnees{background-color:#CED4E1;color:#2157A3;height:35px;margin-top:10px}
+#clients .coordonnees h2 {padding-top:10px; padding-left:13px; font-family:Arial; font-weight:bold;font-size:12px; float:left}
+#clients .contenu_blanc{ background: url("../img/clientArea/page_centrale.png") repeat-y scroll 0 0 transparent;/*background-color:#ffffff;*/ height:400px;/*border-bottom:2px solid black;border-right:2px solid black;*/padding-left:10px;padding-right:10px;padding-bottom:10px}
+#clients #fond_blanc{background: url("../img/clientArea/bas_page_centrale.png") no-repeat scroll 0 0 transparent;/*background-color:#ffffff;*/ height:13px;}
+
+
+/*------------------------------Liste des souhaits (wishlist) ---------------------------------------------*/
+#wishlist {overflow:hidden;}
+#wishlist {width:710px; float:left;height:auto;font-family:Arial;font-size:12px;padding-left:18px}
+#wishlist .coordonnees{background-color:#CED4E1;color:#2157A3;height:35px;margin-top:10px}
+#wishlist .coordonnees h2 {padding-top:10px; padding-left:13px; font-family:Arial; font-weight:bold;font-size:12px; float:left}
+#wishlist .ctn_wishlist{ background: url("../img/clientArea/page_centrale.png") repeat-y scroll 0 0 transparent;/*background-color:#ffffff;*/ overflow:hidden; height:auto; /*border-bottom:2px solid black;border-right:2px solid black;*/padding-left:10px;padding-right:10px;padding-bottom:10px}
+#wishlist #fond_blanc{background: url("../img/clientArea/bas_page_centrale.png") no-repeat scroll 0 0 transparent;/*background-color:#ffffff;*/ height:13px;}
+
+#wishlist .ctn_wishlist .premiere_liste {margin-top:20px;}
+#wishlist .ctn_wishlist .premiere_liste table {width:100%;}
+#wishlist .ctn_wishlist .premiere_liste .soustitre {width:100%; margin:0; padding-top:5px; padding-bottom:5px; border-top:2px solid #777; border-bottom:2px solid #777; text-align:center; margin-bottom:4px;}
+#wishlist .ctn_wishlist .premiere_liste .soustitre span {float:left; margin-top:3px;}
+#wishlist .ctn_wishlist .premiere_liste .supprimer {width:31px; float:right; border-left:1px solid #777; border-right:1px solid #777;}
+#wishlist .ctn_wishlist .premiere_liste .supprimer  input {padding:0; margin:0 auto; width:20px; height:20px; color:#777; line-height:normal; border:0; font-weight:bold;}
+#wishlist .ctn_wishlist .premiere_liste table tr th {height:auto; color: #FFFFFF; font-weight: bold; text-align: center; border-left: 1px solid #eee; padding: 5px 0 5px 0;}
+#wishlist .ctn_wishlist .premiere_liste table tr th.image {width:50px;}
+#wishlist .ctn_wishlist .premiere_liste table tr th.article {width:214px; border-left:1px solid #777;}
+#wishlist .ctn_wishlist .premiere_liste table tr th.etat {width:90px;}
+#wishlist .ctn_wishlist .premiere_liste table tr th.prix {width:81px;}
+#wishlist .ctn_wishlist .premiere_liste table tr th.checkbox {width:20px;}
+#wishlist .ctn_wishlist .premiere_liste table tr td {height:auto; padding: 5px 0 5px 0; border-left: 1px solid #EEEEEE; border-bottom:1px solid #EEEEEE; vertical-align:middle;}
+#wishlist .ctn_wishlist .premiere_liste table tr td.b_r {border-right: 1px solid #EEEEEE;}
+#wishlist .ctn_wishlist .premiere_liste table tr td.article {border-left:1px solid transparent;}
+#wishlist .ctn_wishlist .premiere_liste table tr td img {margin:0; float:none;}
+#wishlist .ctn_wishlist .premiere_liste .ctn_btn {width:100%; display:block; clear:both; overflow:hidden; margin-bottom:25px; }
+
+/*-------------------------------- Creation compte ----------------------------------------------*/
+#clients.creation_compte .contenu_blanc{height:426px;}
+
+#clients.creation_compte #fond_blanc{margin-bottom:35px}
+
+.creation_compte .coordonnees a img{margin-top:6px;margin-left:380px}
+.creation_compte .coordonnees td{text-align:left}
+
+.creation_compte .coordonnees_droite {width:211px;height:385px;float:left;text-align:right;padding-top:15px}
+
+.creation_compte .coordonnees_droite label{line-height:30px;color:#666666;}
+.creation_compte .coordonnees_droite label[for=pays]{line-height:28px}
+.creation_compte .coordonnees_droite label#civilite{line-height:26px}
+.creation_compte .coordonnees_droite #champs_obligatoires{margin-right:111px;font-size:10px}
+
+.creation_compte .coordonnees_gauche{width:435px;height:385px;font-size:11px;padding-top:15px;float:left}
+.creation_compte .coordonnees_gauche div{float:left;display:block;clear:both;width:500px}
+.creation_compte .coordonnees_gauche input{margin-top:5px;margin-left:5px;margin-bottom:3px;height:16px;float:left}
+.creation_compte .coordonnees_gauche input[type="radio"]{height:20px;}
+.creation_compte .coordonnees_gauche select{margin-left:5px;width:281px;height:22px;margin-top:2px;margin-bottom:2px;}
+
+.creation_compte .coordonnees_gauche img{margin-left:10px;margin-top:10px;line-height:24px;float:left}
+/*.creation_compte .coordonnees_gauche span{float:left;line-height:33px;}*/
+.creation_compte .coordonnees_gauche input#m{float:left;display:block}
+.creation_compte .coordonnees_gauche label[for="m"]{line-height:29px;display:block;float:left}
+.creation_compte .coordonnees_gauche input#mme{float:left;display:block}
+.creation_compte .coordonnees_gauche label[for="mme"]{line-height:29px;display:block;float:left}
+.creation_compte .coordonnees_gauche input#melle{float:left;display:block}
+.creation_compte .coordonnees_gauche label[for="melle"]{line-height:29px;display:block;float:left}
+
+.creation_compte .coordonnees_gauche span{margin-left:8px}
+.creation_compte .coordonnees_gauche .errorPicture {float:left;margin-left:0px;margin-top:8px;min-height:12px;padding-left:14px;background-image: url("/StarterStore/resources/fr_FR/img/clientArea/coche_incorrecte.jpg");background-repeat:no-repeat;}
+
+.creation_compte #je_cree_mon_compte{margin-left:280px;margin-top:7px}
+
+/*---------------------------------------- Coordonnees ---------------------------------------------------*/
+#clients.mes_coordonnees .contenu_blanc{height:328px;}
+
+.mes_coordonnees .coordonnees a img{margin-top:6px;margin-left:300px}
+.mes_coordonnees input{margin-top:3px;color:#cccccc}
+.mes_coordonnees .contenu_blanc{padding-top:20px}
+.mes_coordonnees .contenu_coordonnees a{text-decoration:underline; color:#000000; font-size:10px}
+
+.mes_coordonnees .encart_coordonnees{float:left;width:670px}
+.mes_coordonnees .encart_coordonnees .rouge{float:right}
+.mes_coordonnees .encart_fidelite{margin-left:10px;float:left;width:670px}
+.mes_coordonnees .validation{float:left;height:63px;}
+
+.mes_coordonnees .encart_fidelite .titre_fidelite{font-weight:bold}
+.mes_coordonnees .encart_fidelite label{line-height:24px}
+.mes_coordonnees .encart_fidelite .numero_fidelite{background-color:#eeeeee;height:40px;padding-top:10px;margin-top:5px;}
+.mes_coordonnees .encart_fidelite .numero_fidelite label{margin-left:81px;}
+.mes_coordonnees .encart_fidelite .numero_fidelite input{margin-left:10px;width:200px}
+.mes_coordonnees .encart_fidelite .numero_fidelite a{margin-left:10px;line-height:0px;text-decoration:underline;color:#666666;font-size:10px;margin-top:10px}
+
+.mes_coordonnees .label_coordonnees_droite {width:110px;float:left;text-align:right;height:200px;line-height:24px;}
+.mes_coordonnees .label_coordonnees_droite label{color:#666666;float:right}
+.mes_coordonnees .input_coordonnees_droite{width:205px;float:left;height:200px;margin-left:5px;line-height:22px;}
+.mes_coordonnees .input_coordonnees_droite .erreur{display:none}
+.mes_coordonnees .input_coordonnees_droite img{display:none}
+.mes_coordonnees .label_coordonnees_droite label[for=telephone]{margin-top:5px;display:block}
+.mes_coordonnees .input_coordonnees_droite .complement_form{font-size:10px;line-height:12px}
+.mes_coordonnees .label_coordonnees_gauche {width:100px;float:left;margin-left:10px;margin-top:22px;text-align:right; height:200px;line-height:24px;}
+.mes_coordonnees .label_coordonnees_gauche label{color:#666666;}
+.mes_coordonnees .input_coordonnees_gauche{width:219px;float:left;height:200px;margin-left:5px;margin-top:22px;line-height:22px;}
+.mes_coordonnees .input_coordonnees_gauche select#pays{width:183px;}
+
+.mes_coordonnees .input_coordonnees_gauche .erreur{display:none}
+.mes_coordonnees .input_coordonnees_gauche img{display:none}
+.mes_coordonnees .input_coordonnees_gauche .complement_form{font-size:8px}
+.mes_coordonnees #je_valide{margin-top:16px;margin-left:425px}
+.mes_coordonnees #champs_obligatoires{margin-top:39px;font-size:10px;margin-left:-10px}
+.mes_coordonnees .validation span{float:left}
+.mes_coordonnees .numero_fidelite *{float:left}
+.mes_coordonnees #complements{line-height:0px}
+
+
+
+/*-------------------------------- Address ----------------------------------------------*/
+#clients.address .contenu_blanc{height:426px;}
+
+#clients.address #fond_blanc{margin-bottom:35px}
+
+.address .coordonnees a img{margin-top:6px;margin-left:380px}
+.address .coordonnees td{text-align:left}
+
+.address .coordonnees_droite {width:211px;height:275px;float:left;text-align:right;padding-top:0px}
+
+.address .coordonnees_droite label{line-height:30px;color:#666666;}
+.address .coordonnees_droite label[for=pays]{line-height:28px}
+.address .coordonnees_droite label#civilite{line-height:26px}
+.address .coordonnees_droite #champs_obligatoires{margin-right:111px;font-size:10px}
+
+.address .coordonnees_gauche{width:435px;height:275px;font-size:11px;padding-top:0px;float:left}
+.address .coordonnees_gauche div{float:left;display:block;clear:both;width:500px}
+.address .coordonnees_gauche input{margin-top:5px;margin-left:5px;margin-bottom:3px;height:16px;float:left}
+.address .coordonnees_gauche input[type="radio"]{height:20px;}
+.address .coordonnees_gauche select{margin-left:5px;width:281px;height:22px;margin-top:2px;margin-bottom:2px;}
+
+.address .coordonnees_gauche img{margin-left:10px;margin-top:10px;line-height:24px;float:left}
+/*.creation_compte .coordonnees_gauche span{float:left;line-height:33px;}*/
+.address .coordonnees_gauche input#m{float:left;display:block}
+.address .coordonnees_gauche label[for="m"]{line-height:29px;display:block;float:left}
+.address .coordonnees_gauche input#mme{float:left;display:block}
+.address .coordonnees_gauche label[for="mme"]{line-height:29px;display:block;float:left}
+.address .coordonnees_gauche input#melle{float:left;display:block}
+.address .coordonnees_gauche label[for="melle"]{line-height:29px;display:block;float:left}
+
+.address .coordonnees_gauche span{margin-left:8px}
+.address .coordonnees_gauche .errorPicture {float:left;margin-left:0px;margin-top:8px;min-height:12px;padding-left:14px;background-image: url("/StarterStore/resources/fr_FR/img/clientArea/coche_incorrecte.jpg");background-repeat:no-repeat;}
+
+
+/*---------------------------------------- Code d'acces ---------------------------------------------------*/
+#clients.code_acces .contenu_blanc{height:291px}
+.code_acces .coordonnees a img{margin-top:6px;margin-left:300px}
+.code_acces  a{text-decoration:underline; color:#000000; font-size:10px}
+
+
+.code_acces .modification_email{ height:125px;width:690px;/*border-bottom:2px solid black;border-right:2px solid black;*/float:left}
+.code_acces .modification_email .label {width:278px;float:left;margin-left:10px;margin-top:21px;text-align:right;}
+.code_acces .modification_email .label label{line-height:30px;color:#666666;font-weight:bold}
+.code_acces .modification_email .input{width:185px;float:left;margin-left:10px;line-height:30px;margin-top:21px;}
+.code_acces .modification_email .input .erreur{display:none}
+.code_acces .modification_email .input input{margin-top:5px}
+.code_acces .modification_email .input img{display:none}
+.code_acces .modification_email .input .complement_form{font-size:8px}
+.code_acces .modification_email .contenu_code_acces .modification_email .input_coordonnees_gauche .complement_form{font-size:8px}
+.code_acces .modification_email #je_valide{margin-top:5px;margin-left:504px}
+
+.code_acces .modification_mdp{height:160px;float:left;width:690px;}
+.code_acces .modification_mdp .label {width:278px;float:left;margin-left:10px;text-align:right;margin-top:20px;}
+.code_acces .modification_mdp .label label{line-height:30px;color:#666666;font-weight:bold}
+.code_acces .modification_mdp .input{width:185px;float:left;margin-left:10px;line-height:30px;margin-top:20px;}
+.code_acces .modification_mdp .input .erreur{display:none}
+.code_acces .modification_mdp .input img{display:none}
+.code_acces .modification_mdp .input input{margin-top:6px}
+.code_acces .modification_mdp .input .complement_form{font-size:8px}
+.code_acces .modification_mdp .contenu_code_acces .modification_email .input_coordonnees_gauche .complement_form{font-size:8px}
+.code_acces .modification_mdp #je_valide{margin-top:18px;margin-left:504px}
+
+.code_acces #champs_obligatoires{margin-left:10px;margin-right:100px;font-size:10px}
+.code_acces .numero_fidelite *{float:left}
+
+/*----------------------------------------Carnet d'adresse -----------------------------------------------------*/
+.carnet_adresse a img{margin-top:6px;margin-left:300px}
+.carnet_adresse h3{line-height:30px;font-weight:bold;/*margin-left:30px;*/padding-top:10px}
+
+.carnet_adresse .adresse_facturation {height:65px;background-color:#eeeeee;margin-bottom:10px;}
+.carnet_adresse .adresse_facturation img{margin-left:423px;margin-top:34px}
+.carnet_adresse .adresse_facturation .contenu_adressse_facturation{float:left;margin-left:20px;margin-top:15px}
+
+.carnet_adresse .adresse_livraison {height:140px;background-color:#eeeeee;}
+.carnet_adresse .ajouter_nouvelle_adresse{margin-top:12px;margin-left:400px}
+
+.carnet_adresse .contenu_adressse_livraison_autre{float:left;width:304px;margin-top:20px;margin-left:20px}
+.carnet_adresse .interieur_contenu_adressse_livraison_autre{float:left;width:214px}
+.carnet_adresse .contenu_adressse_livraison_autre img{margin-left:15px}
+.carnet_adresse .contenu_adressse_livraison_domicile{float:left;width:300px;margin-top:20px;margin-left:20px}
+.carnet_adresse .contenu_adressse_livraison_domicile span{float:left;display:block}
+.carnet_adresse .contenu_adressse_livraison_domicile a{}
+.carnet_adresse .contenu_adressse_livraison_domicile img{margin-left:90px}
+
+.carnet_adresse .liens{margin-top:-18px;float:left}
+.carnet_adresse .liens img{margin-top:4px;}
+
+/*----------------------------------------- Magasin prefere -------------------------------------------------------*/
+.magasin_prefere a img{margin-top:6px;margin-left:300px}
+.magasin_prefere h3{line-height:30px;font-weight:bold;padding-top:10px;font-size:12px;}
+
+.magasin_prefere .bloc_droit{padding-top:5px;float:left;width:243px}
+.magasin_prefere .bloc_droit select{width:256px}
+.magasin_prefere .bloc_droit option{color:#999999}
+.magasin_prefere .bloc_droit img#OK {margin-top:10px}
+
+.magasin_prefere .bloc_gauche {float:left;width:421px;padding-top:5px}
+.magasin_prefere .bloc_gauche .horaires1{float:left;font-size:11px;width:198px}
+.magasin_prefere .bloc_gauche .horaires2{font-size:11px}
+
+.magasin_prefere #champs_obligatoires{font-size:12px;margin-top:10px}
+.magasin_prefere .je_valide{margin-left:60px;margin-top:15px}
+
+/*----------------------------------------- Creation liste --------------------------------------------------------*/
+#clients.liste_souhaits .contenu_blanc{height:480px}
+.liste_souhaits .creation_liste{margin-left:10px}
+
+
+.liste_souhaits .creation_liste input[type="text"]{border: 1px solid #AAADB2;color: #CCC;font-size: 12px;font-style: italic;height: 19px;line-height: 19px;margin: 0px;padding: 1px;width: 266px;text-align:left}
+.liste_souhaits .creation_liste input[type="image"]{padding-top:10px}
+.liste_souhaits span{color:#777777}
+.liste_souhaits .soustitre{float:left;font-size:13px;margin-top:30px;font-weight:bold;/*line-height:20px*/}
+.liste_souhaits .suppression{float:left;margin-top:30px;margin-left:423px;font-size:10px}
+.liste_souhaits .suppression a{text-decoration:underline;color:#777777;font-size:9px}
+
+/* tableau */
+.liste_souhaits th{background-color:#777777;color:#ffffff;height:30px;font-weight:bold;text-align:center}
+.liste_souhaits div{/*margin-top:1px;margin-bottom:1px;*/}
+.liste_souhaits th div{height:24px}
+.liste_souhaits th div.borderRight{border-right:1px solid #454545}
+.liste_souhaits th div.borderLeft{border-left:1px solid #aaaaaa}
+
+.liste_souhaits td:first{text-align:left}
+.liste_souhaits td{text-align:center;height:45px;vertical-align:middle}
+.liste_souhaits td div{margin-top:2px;margin-bottom:2px;height:41px}
+.liste_souhaits td.intitule{text-align:left;}
+.liste_souhaits td div.borderRight{border-right:1px solid #aaaaaa}
+
+.liste_souhaits #intitule{width:362px;font-size:12px;vertical-align:middle;text-align:left}
+.liste_souhaits #intitule span{margin-left:10px;color:#ffffff;}
+.liste_souhaits #prix_unitaire{width:132px;vertical-align:middle;}
+.liste_souhaits #prix_unitaire span{color:#ffffff;}
+.liste_souhaits #quantite{width:111px;vertical-align:middle;}
+.liste_souhaits #quantite span{color:#ffffff;}
+.liste_souhaits #coche{width:57px;}
+.liste_souhaits #coche span{color:#ffffff}
+
+.liste_souhaits input[type="text"]{width: 20px;text-align:center}
+.liste_souhaits span.complement{font-size:8px}
+.liste_souhaits td img{float:left;margin-right:20px;}
+
+.liste_souhaits table tr{border-bottom:1px solid #eeeeee}
+
+.liste_souhaits .intitule span{font-size:12px}
+
+.liste_souhaits .premiere_liste{margin-left:10px}
+.liste_souhaits .premiere_liste span.gras{color:#000000}
+.liste_souhaits .premiere_liste table{float:left;margin-bottom:6px;width:665px}
+
+.liste_souhaits .deuxieme_liste{margin-left:10px;float:left}
+.liste_souhaits .deuxieme_liste span.gras{color:#000000}
+.liste_souhaits .deuxieme_liste table{margin-bottom:6px;float:left;width:665px}
+
+
+.liste_souhaits #btn_addCart_wishProduct{float:right; background: url("../img/clientArea/ajouter_panier.png") repeat-y scroll 0 0 transparent; border:0px; width:123px; height:20px }
+.liste_souhaits #btn_supprimer_wishProduct{float:right; background: url("../img/clientArea/supprimer.png") repeat-y scroll 0 0 transparent;border:0px;width:84px; height:20px }
+.liste_souhaits .envoyer_ami{float:right}
+.liste_souhaits label[for="selectionne_tout"]{font-size:11px}
+
+
+
+/*--------------------------------------Visualiser commande-------------------------------------------------------*/
+
+#clients .contenu_blanc .ctn_tableau {margin:0 auto; width:654px; padding-top:10px;}
+#clients .contenu_blanc table{display:block;}
+#clients .contenu_blanc .ctn_tableau {}
+#clients .contenu_blanc table.scroll {overflow:auto; display:block; height:370px;}
+#clients.visualiser_commandes .thead{border:1px solid #eeeeee;background-color:#777777;color:#ffffff;height:26px;margin:auto;width:668px;font-weight:bold}
+#clients.visualiser_commandes .thead *{vertical-align:middle;text-align:center}
+#clients.visualiser_commandes .thead tr td {border-left:1px solid #aaa; padding-top:5px; padding-bottom:5px; font-weight:bold;}
+#clients.visualiser_commandes .thead tr td.montant {border-right:1px solid #eee;}
+#clients.visualiser_commandes .tbody{width:668px; overflow:hidden;}
+#clients.visualiser_commandes .tbody .separation {border-left:1px solid #eeeeee;border-right:1px solid #eeeeee;border-bottom:1px solid #eeeeee;}
+#clients.visualiser_commandes .tbody .separation {width:668px }
+#clients.visualiser_commandes .tbody .separation:hover{background-color: white ; cursor: pointer;}
+#clients.visualiser_commandes .tbody .separation *{text-align:center}
+#clients.visualiser_commandes .tbody .separation td {vertical-align:middle; padding-top:5px; padding-bottom:5px; border-bottom:1px solid #eee;}
+#clients.visualiser_commandes .tbody .separation .numCommande{border-left:none; border-left:1px solid #eee;}
+#clients.visualiser_commandes .tbody .separation .date{border-left:1px solid #eee}
+#clients.visualiser_commandes .tbody .separation .nbArticle{border-left:1px solid #eee}
+#clients.visualiser_commandes .tbody .separation .etat{border-left:1px solid #eee}
+#clients.visualiser_commandes .tbody .separation .montant{border-left:1px solid #eee; border-right:1px solid #eee;}
+#clients.visualiser_commandes .numCommande{width:150px}
+#clients.visualiser_commandes .date{width:160px}
+#clients.visualiser_commandes .nbArticle{width:120px}
+#clients.visualiser_commandes .etat{width:110px}
+#clients.visualiser_commandes .montant{width:90px; border}
+
+
+/*--------------------------------------Visualiser détail de commande-------------------------------------------------------*/
+
+.visualiser_detail_commandes .contenu_interieur .contenu_blanc {padding-top:8px;height:auto;}
+.visualiser_detail_commandes .contenu_interieur {width:712px; float:left;height:auto;font-family:Arial;font-size:12px;padding-left:18px;}
+.visualiser_detail_commandes tr.separation td {text-align:center;}
+.visualiser_detail_commandes table tr th {border-right:1px solid #eeeeee;background-color:#777777;color:#ffffff; width:668px;font-weight:bold; text-align:center;}
+.visualiser_detail_commandes table tr td {border-right:1px solid #eeeeee; border-bottom:1px solid #eeeeee; vertical-align:middle;}
+.visualiser_detail_commandes table tr th, .visualiser_detail_commandes table tr td {padding-top:5px; padding-bottom:5px;}
+.visualiser_detail_commandes table tr th.reference {width:75px; border-left:1px solid #777777;}
+.visualiser_detail_commandes table tr td.reference {width:75px; border-left:1px solid #eeeeee;}
+.visualiser_detail_commandes table tr th.libelle, .visualiser_detail_commandes table tr td.libelle{width:214px;}
+.visualiser_detail_commandes table tr th.quantite, .visualiser_detail_commandes table tr td.quantite{width:60px;}
+.visualiser_detail_commandes table tr th.etat, .visualiser_detail_commandes table tr td.etat{width:90px;}
+.visualiser_detail_commandes table tr th.montant {border-right:1px solid #eee; width:81px;}
+.visualiser_detail_commandes table tr td.montant  {width:81px;}
+.visualiser_detail_commandes table tr td.montant_tot {width:81px; text-align:right; padding-right:5px; font-size:11px;}
+.visualiser_detail_commandes table tr td.montant_tot_com {width:81px; text-align:right; padding-right:5px; color:white; background-color:#777; border-bottom:1px solid #777; font-weight:bold;} 
+.visualiser_detail_commandes table tr td.reference {width:81px;}
+.visualiser_detail_commandes table tr td.montant span.prix_barre {text-decoration:line-through; font-size:11px; display:block;}
+.visualiser_detail_commandes tr.separation td.vide {text-align:right; width: 608px; border-left:1px solid #eeeeee; padding-right:5px;}
+.visualiser_detail_commandes tr.separation td.paiement {background-color:#777; color:white; padding-right:5px; font-weight:bold; border-right:1px solid #777; border-bottom:1px solid #777;}
+.visualiser_detail_commandes tr.separation.border td {border-top:2px solid #666;}
+.visualiser_detail_commandes .boutons{margin-top:35px;margin-left:30px;float:left;}
+.visualiser_detail_commandes .boutons img{margin-top:5px;}
+.visualiser_detail_commandes .adresse_facturation{float:left;background-color:#EEE;width:207px;height:70px;padding:10px;margin-top:10px;margin-left:10px;}
+.visualiser_detail_commandes .adresse_livraison{float:left;margin-left:20px;background-color:#EEE;width:207px;height:70px;padding:10px;margin-top:10px;}
+
+.visualiser_detail_commandes .statut{width:177px}
+
+/*--------------------------------------Récapitulatif de commande après paiement-------------------------------------------------------*/
+.ligne .contenu_interieur{height:auto;}
+
+.ligne .detail_commande{padding-top:10px;height:20px;margin-bottom:10px}
+.ligne .detail_commande input{float:left;margin-left:308px}
+.ligne .detail_commande span{line-height:10px;float:left}
+
+.ligne .thead{border:1px solid #eeeeee;background-color:#777777;color:#ffffff;height:26px;margin:auto;width:668px;font-weight:bold}
+.ligne .thead *{float: left;padding-top: 5px;padding-bottom: 5px;padding-left:0px;text-align:center}
+.ligne .thead .reference{border-left:1px solid #aaaaaa}
+.ligne .thead .libelle{border-left:1px solid #aaaaaa}
+.ligne .thead .quantite{border-left:1px solid #aaaaaa}
+.ligne .thead .montant{border-left:1px solid #aaaaaa}
+
+
+.ligne .tbody{margin:auto;width:668px;height:90px}
+.ligne .tbody *{float: left;padding-top: 5px;padding-bottom:5px}
+.ligne .tbody .separation{border-left:1px solid #eeeeee;border-right:1px solid #eeeeee;border-bottom:1px solid #eeeeee}
+.ligne .tbody .separation{overflow: hidden;padding: 3px 0px;width:668px}
+.ligne .tbody .separation *{float:left;text-align:center}
+/* #visualiser_detail_commandes .tbody .separation .reference{border-left:1px solid #aaaaaa}
+#visualiser_detail_commandes .tbody .separation .libelle{border-left:1px solid #aaaaaa}
+#visualiser_detail_commandes .tbody .separation .quantite{border-left:1px solid #aaaaaa} */
+.ligne .tbody .separation .montant{border-left:1px solid #eeeeee}
+
+.ligne .contenu_interieur .coordonnees h2 a input{right: 5px}
+
+.ligne .reference{width:140px}
+.ligne .libelle{width:200px}
+.ligne .quantite{width:80px}
+.ligne .montant{width:100px}
+
+.ligne .statut{width:177px}
+.ligne .vide{width: 380px;}
+
+.ligne .boutons{margin-top:35px;margin-left:30px;float:left}
+.ligne .boutons img{margin-top:5px}
+.ligne .adresse_facturation{float:left;background-color:#EEE;width:207px;height:70px;padding:10px;margin-top:10px;margin-left:10px;}
+.ligne .adresse_livraison{float:left;margin-left:20px;background-color:#EEE;width:207px;height:70px;padding:10px;margin-top:10px}
+
+.ligne .boutons{margin-top:35px;margin-left:30px;float:left}
+.ligne .boutons img{margin-top:5px}
+.ligne .adresse_facturation{float:left;background-color:#EEE;width:207px;height:70px;padding:10px;margin-top:10px;margin-left:10px;}
+.ligne .adresse_livraison{float:left;margin-left:20px;background-color:#EEE;width:207px;height:70px;padding:10px;margin-top:10px}
+
+.ligne .soustableau{width:668px;height:90px;border: 1px solid #eeeeee;margin-bottom:20px;padding-top:10px;padding-bottom:10px;margin:auto;}
+.ligne .soustableau p{line-height:20px}
+.ligne .soustableau .separation .vide{text-align:left;margin-left:10px}
+.ligne .soustableau .separation{overflow: hidden;padding: 3px 0px;width:668px}
+.ligne .soustableau .separation *{float:left;text-align:center}
+
+/*---------------------------------------Newsletter Demande----------------------------------------------------*/
+.newsletter_demande .titre{width:230px;height:36px;font-weight:bold}
+.newsletter_demande .titre span{display:block;padding-top:20px;}
+
+.newsletter_demande .bloc_droit{margin-left:100px;/*margin-top:30px;*/float:left;width:120px}
+.newsletter_demande .bloc_droit label{display:block;margin-top:28px;float:right}
+.newsletter_demande .bloc_droit label span{color:red}
+
+.newsletter_demande .bloc_gauche{/*margin-top:30px;*/margin-left:3px;float:left;width:330px}
+.newsletter_demande .bloc_gauche input[type=text]{margin-top:25px;margin-left:5px;width:316px}
+.newsletter_demande .bloc_gauche select{margin-left:10px;margin-top:20px;width:293px;height:20px}
+
+.newsletter_demande .bloc_central{float:left;margin-left:300px;margin-top:30px}
+
+
+/*-------------------------------------Connexion---------------------------------------------------------------*/
+
+.connexion .login_me {text-align:center;padding-top:10px;}
+.connexion .login_me input {width:134px;height:25px;background-image: url("../img/clientArea/me_connecter.png");background-color: inherit;background-repeat:no-repeat;border:0;font-size:0px;color:#BCBCBC;cursor:pointer;}
+
+.connexion .contenu_blanc{margin-top:10px}
+.connexion .titre{width:230px;font-weight:bold;height:35px}
+.connexion .titre span{display:block;padding-top:13px;}
+
+.connexion .bloc_droit{/*margin-top:30px;*/float:left;width:325px;height:1000px;border-right:1px solid #777777}
+.connexion .bloc_droit label{font-weight:bold;display:block}
+.connexion .bloc_droit label[for=adresse_mail]{margin-top:10px}
+.connexion .bloc_droit label[for="login.password"]{margin-top:10px}
+.connexion .bloc_droit a{text-decoration:underline;font-size:10px;display:block;line-height:21px}
+.connexion .bloc_droit input[type=text], .connexion .bloc_droit input[type=password]{width:290px}
+.connexion .bloc_droit img{margin-top:15px;margin-left:85px}
+.connexion .bloc_droit input[type=checkbox]{float:left}
+.connexion .bloc_droit label span, .connexion .error{color:red}
+
+/* .connexion .bloc_gauche{margin-top:30px;height:250px;margin-left:20px;float:left;width:315px} */
+
+.connexion .bloc_central{float:left}
+.connexion .bloc_central span{color:red;font-size:10px}
+
+.connexion .facebook{margin-top:20px}
+.connexion .facebook span.gras{margin-top:60px}
+.connexion .facebook span{width:170px;display:block;float:left;margin-top:15px}
+.connexion .facebook .creation_Compte a img{margin-left:33px;margin-top:12px}
+
+.connexion .haut span{width:170px;display:block;float:left;margin-top:15px}
+.connexion .sauvegarde{margin-top:20px}
+.connexion .creation_Compte span{display:block;width:150px;float:left}
+.connexion .creation_Compte a{float:left}
+.connexion .haut .creation_Compte a img{/*margin-left:20px;*/margin-top:10px}
+
+
+
+/*-------------------------------------------Accueil-------------------------------------------------------------*/
+.accueil #contenu_interieur .contenu_blanc{height:291px;}
+
+.accueil .mes_coupons{height:110px}
+.accueil .mes_coupons span{float:left}
+.accueil .mes_coupons .titre {width:230px;font-weight:bold;height:35px}
+.accueil .mes_coupons .titre span{display:block;padding-top:13px;}
+.accueil .mes_coupons .codes{margin-left:36px;width:402px;height:50px;margin-top:3px;float:left}
+.accueil .mes_coupons .codes span{display:block;line-height:20px;width:300px;}
+.accueil .mes_coupons .valables{float:left;margin-top:3px;width:190px;}
+.accueil .mes_coupons .valables span{display:block;float:left;line-height:20px;width:300px;}
+
+.accueil .ma_carte_fidelite{height:103px}
+.accueil .ma_carte_fidelite span{float:left}
+.accueil .ma_carte_fidelite .titre {width:230px;font-weight:bold;height:35px}
+.accueil .ma_carte_fidelite .titre span{display:block;padding-top:13px;}
+.accueil .ma_carte_fidelite .carte_fidelite{margin-left:36px;width:275px;height:50px;margin-top:4px;}
+.accueil .ma_carte_fidelite .carte_fidelite span{line-height:20px}
+.accueil .ma_carte_fidelite .soldes{width:287px;height:30px;}
+.accueil .ma_carte_fidelite .soldes span{line-height:20px;}
+.accueil .ma_carte_fidelite .carte_fidelite .soldes .gras{float:right;}
+.accueil .ma_carte_fidelite .carte_fidelite .gras{float:none;color:#404040}
+
+.accueil .emsAccount {text-align:center;color:black;font-weight:bold;}
+.accueil .emsTextBlock ul{margin-left: 222px; width:417px; list-style-type:disc;list-style-position: outside;}
+.accueil .emsTextBlock li {text-align:left;}
+.accueil .ems_vipCustomer {height: 78px;padding-top:35px;font-size:1.5em;}
+.accueil .ems_otherCustomer {height: 78px;padding-top:35px;}
+
+/*-----------------------------------------Mes retours -----------------------------------------------------------*/
+/* #clients.mes_retours .contenu_blanc{padding-top:20px;height:430px} */
+/* .mes_retours .detail_commande{padding-top:10px;height:20px;margin-bottom:10px} */
+/* .mes_retours .detail_commande input{float:left;margin-left:308px} */
+/* .mes_retours .detail_commande span{line-height:10px;float:left} */
+/* .mes_retours form{pading-top:20px} */
+/* .mes_retours .thead{border:1px solid #eeeeee;background-color:#777777;color:#ffffff;height:30px;margin:auto;width:668px;font-weight:bold;font-size:11px;} */
+/* .mes_retours .thead *{} */
+/* .mes_retours .thead .statut{border-left:1px solid #aaaaaa;border-right:1px solid #454545} */
+/* .mes_retours .thead .date_demande{border-left:1px solid #aaaaaa;border-right:1px solid #454545} */
+/* .mes_retours .thead .date_remboursement{border-left:1px solid #aaaaaa;border-right:1px solid #454545} */
+/* .mes_retours .thead .montant{border-left:1px solid #aaaaaa;border-right:1px solid #454545} */
+/* .mes_retours .thead .nbArticles{border-left:1px solid #aaaaaa;border-right:1px solid #454545} */
+/* .mes_retours .thead .vide{border-right:1px solid #454545;width:165px;} */
+/* .mes_retours .thead .motifs{border-left:1px solid #aaaaaa;border-right:1px solid #454545} */
+/* .mes_retours .thead .details{border-left:1px solid #aaaaaa;} */
+/* .mes_retours .thead div{display:block;vertical-align:middle;float: left;text-align:center;margin-top:2px;margin-bottom:2px;height:26px;line-height:12px} */
+/* .mes_retours .thead div span{margin-top:auto} */
+/* .mes_retours .tbody{margin:auto;width:668px;height:90px} */
+/* .mes_retours .tbody *{padding-top: 5px;padding-bottom:5px} */
+/* .mes_retours .tbody .separation{border-left:1px solid #eeeeee;border-right:1px solid #eeeeee;height:33px;border-bottom:1px solid #eeeeee} */
+/* .mes_retours .tbody .separation{overflow: hidden;padding: 3px 0px;width:668px} */
+/* .mes_retours .tbody .separation div{float: left;margin-top:4px;margin-bottom:4px;height:24px;vertical-align:middle} */
+/* .mes_retours .tbody .separation div span{line-height:24px} */
+/* .mes_retours .tbody .separation .vide span{line-height:10px} */
+/* .mes_retours .tbody .separation .statut span{line-height:12px} */
+/* .mes_retours .tbody .separation .vide{text-align:left;margin-left:10px;width:153px} */
+/* .mes_retours .tbody .separation *{text-align:center} */
+/* .mes_retours .tbody .statut{border-right:1px solid #aaaaaa;border-left:1px solid #ffffff; border-bottom: 1px solid #aaaaaa;} */
+/* .mes_retours .tbody .vide{border-left:1px solid #ffffff;text-align:center; border-bottom: 1px solid #aaaaaa;} */
+/* .mes_retours .tbody .montant{border-right:1px solid #aaaaaa;border-left:1px solid #ffffff;border-bottom: 1px solid #aaaaaa;} */
+/* .mes_retours .tbody .nbArticles{border-right:1px solid #aaaaaa;border-left:1px solid #ffffff;border-bottom: 1px solid #aaaaaa;} */
+/* .mes_retours .tbody .motifs{border-right:1px solid #aaaaaa;border-left:1px solid #ffffff;border-bottom: 1px solid #aaaaaa;} */
+/* .mes_retours .tbody .date_demande{border-right:1px solid #aaaaaa;border-left:1px solid #aaaaaa;border-bottom: 1px solid #aaaaaa;} */
+/* .mes_retours .tbody .statut{border-right:1px solid #aaaaaa;border-left:1px solid #ffffff;border-bottom: 1px solid #aaaaaa;} */
+/* .mes_retours .tbody .date_remboursement{border-right:1px solid #aaaaaa;border-left:1px solid #ffffff;border-bottom: 1px solid #aaaaaa;} */
+/* .mes_retours .tbody .details a{text-decoration:underline} */
+/* .mes_retours .vide{width: auto;} */
+/* .mes_retours .date_demande{width:auto; padding: auto;} */
+/* .mes_retours .nbArticles{width: auto;} */
+/* .mes_retours .montant{width:auto;} */
+/* .mes_retours .date_remboursement{width:auto;} */
+/* .mes_retours .motifs{width:auto;} */
+/* .mes_retours .boutons{margin-top:35px;margin-left:30px;float:left} */
+/* .mes_retours .boutons img{margin-top:5px} */
+/* .mes_retours .adresse_facturation{float:left;background-color:#EEE;width:207px;height:70px;padding:10px} */
+/* .mes_retours .adresse_livraison{float:left;margin-left:20px;background-color:#EEE;width:207px;height:70px;padding:10px} */
+/* .mes_retours .soustableau{width:668px;height:90px;border: 1px solid #eeeeee;margin-bottom:20px;padding-top:10px;padding-bottom:10px} */
+/* .mes_retours .soustableau p{line-height:20px} */
+/* .mes_retours .soustableau .separation .vide{text-align:left;margin-left:10px} */
+/* .mes_retours .soustableau .separation{overflow: hidden;padding: 3px 0px;width:668px} */
+/* .mes_retours .soustableau .separation *{float:left;text-align:center} */
+
+/* myReturns */
+#retour .contenu_blanc table {width:100%; display:table; padding-top:10px;}
+#retour .contenu_blanc table tr:hover {background-color:white; cursor:pointer;}
+#retour .contenu_blanc table tr th {color: #FFFFFF; font-weight: bold; text-align: center; border-left: 1px solid #eee; padding: 5px 0 5px 0; background-color:#777; vertical-align:middle;}
+#retour .contenu_blanc table tr th.date_dmd {width:110px;}
+#retour .contenu_blanc table tr th.motifs {width:80px;}
+#retour .contenu_blanc table tr th.nbr_art {width:75px;}
+#retour .contenu_blanc table tr th.statut {width:55px;}
+#retour .contenu_blanc table tr th.montant {width:20px;}
+#retour .contenu_blanc table tr th.date_rbt {width:90px;}
+#retour .contenu_blanc table tr td {height:auto; padding: 5px 0 5px 0; border-left: 1px solid #EEEEEE; border-bottom:1px solid #EEEEEE; vertical-align:middle; text-align:center;}
+#retour .contenu_blanc table tr td.rbt {border-right:1px solid #eee;}
+/* returnDetails */
+#returnDetails .contenu_blanc table {width:100%; display:table; padding-top:10px;}
+#returnDetails .contenu_blanc table tr th {height:auto; color: #FFFFFF; font-weight: bold; text-align: center; border-left: 1px solid #eee; padding: 5px 0 5px 0; background-color:#777;}
+#returnDetails .contenu_blanc table tr th.reference {width:50px;}
+#returnDetails .contenu_blanc table tr th.libelle {width:80px;}
+#returnDetails .contenu_blanc table tr th.nbr_art {width:75px;}
+#returnDetails .contenu_blanc table tr th.statut {width:35px;}
+#returnDetails .contenu_blanc table tr th.quantité {width:20px;}
+#returnDetails .contenu_blanc table tr th.motifs {width:90px;}
+#returnDetails .contenu_blanc table tr td {height:auto; padding: 5px 0 5px 0; border-left: 1px solid #EEEEEE; border-bottom:1px solid #EEEEEE; vertical-align:middle; text-align:center;}
+
+/*------------------------------------------------------Espace carte----------------------------------------------------------------------*/
+.espace_carte .titre{width:230px;font-weight:bold;height:35px}
+.espace_carte .titre span{display:block;padding-top:13px;}
+
+.espace_carte .solde{width:689px; height:83px;}
+.espace_carte .solde .solde_points{width:278px; height:21px;}
+.espace_carte .solde .solde_points span{float:left}
+.espace_carte .solde .solde_points .gras{float:left;margin-left:50px}
+
+.espace_carte .EMS_avantages{width:689px; height:100px;}
+.espace_carte .EMS_avantages img{float:left}
+.espace_carte .EMS_avantages .mes_avantages{margin-left:20px;margin-top:5px;float:left;width:385px;height:100px}
+.espace_carte .EMS_avantages .mes_avantages span{display:block;line-height:20px;}
+
+/*-------------------------------------------------Effectuer retour -------------------------------------------------------------------------*/
+#clients.effectuer_retour .contenu_blanc{padding-top:20px;height:430px}
+.effectuer_retour .detail_commande{padding-top:10px;height:20px;margin-bottom:10px}
+.effectuer_retour .detail_commande input{float:left;margin-left:308px}
+.effectuer_retour .detail_commande span{line-height:21px;float:left}
+.effectuer_retour .detail_commande select{margin-left:10px;width:188px;height:20px;margin-top:3px}
+
+.effectuer_retour form{pading-top:20px}
+.effectuer_retour .thead{border:1px solid #eeeeee;background-color:#777777;color:#ffffff;height:30px;margin:auto;width:668px;font-weight:bold;font-size:11px;}
+.effectuer_retour .thead div{display:block;vertical-align:middle;float: left;text-align:center;margin-top:2px;margin-bottom:2px;height:26px;line-height:12px}
+.effectuer_retour .thead div span{line-height:24px}
+.effectuer_retour .thead .vide{border-right:1px solid #454545;}
+.effectuer_retour .thead .motif{border-left:1px solid #aaaaaa;border-right:1px solid #454545;}
+.effectuer_retour .thead .statut{border-left:1px solid #aaaaaa;border-right:1px solid #454545;}
+.effectuer_retour .thead .quantite_exp{border-left:1px solid #aaaaaa;border-right:1px solid #454545;}
+.effectuer_retour .thead .quantite_exp span{line-height:13px}
+.effectuer_retour .thead .quantite_ret{border-left:1px solid #aaaaaa;}
+.effectuer_retour .thead .quantite_ret span{line-height:13px}
+
+.effectuer_retour .tbody{margin:auto;width:668px;height:327px; overflow:auto;}
+.effectuer_retour .tbody *{/*float: left;padding-top: 5px;padding-bottom:5px*/}
+.effectuer_retour .tbody .separation{height:35px;overflow: hidden;border-left:1px solid #eeeeee;border-right:1px solid #eeeeee;border-bottom:1px solid #eeeeee}
+/*.effectuer_retour .tbody .separation{padding: 3px 0px;}*/
+.effectuer_retour .tbody .separation div{display:block;vertical-align:middle;float: left;text-align:center;margin-top:5px;margin-bottom:5px;height:24px;line-height:12px}
+.effectuer_retour .tbody .separation div span{line-height:18px}
+.effectuer_retour .tbody .separation .vide{text-align:left;margin-left:10px;width:180px;border-right:1px solid #aaaaaa;}
+.effectuer_retour .tbody .separation .vide label{margin:0;padding:0;font-size:9px;line-height:12px;clear:both;display:block;float:left}
+.effectuer_retour .tbody .separation .vide span{margin:0;padding:0;line-height:14px}
+.effectuer_retour .tbody .separation .vide input{margin:0;padding:0;margin-left:5px;float:left;vertical-align:top;line-height:12px}
+
+
+*+ html .effectuer_retour .tbody .separation .vide input{margin-top:-4px;}
+.effectuer_retour .tbody .separation .motif{border-right:1px solid #aaaaaa;border-left:1px solid #ffffff;}
+.effectuer_retour .tbody .separation .motif select{width:160px;margin-left:3px;height:20px;margin-top:2px}
+.effectuer_retour .tbody .separation .statut{border-right:1px solid #aaaaaa;border-left:1px solid #ffffff;}
+.effectuer_retour .tbody .separation .statut span{line-height:13px}
+.effectuer_retour .tbody .separation .quantite_exp{border-right:1px solid #aaaaaa;border-left:1px solid #ffffff;}
+.effectuer_retour .tbody .separation .quantite_ret{border-left:1px solid #ffffff}
+.effectuer_retour .tbody .separation .quantite_ret input{width:37px;height:16px}
+
+
+
+.effectuer_retour .vide{width: 192px;}
+.effectuer_retour .motif{width:179px}
+.effectuer_retour .statut{width:121px}
+.effectuer_retour .quantite_exp{width:82px}
+.effectuer_retour .quantite_ret{width:86px}
+
+.effectuer_retour .boutons{margin-top:10px;margin-left:564px;float:left}
+.effectuer_retour .boutons img{margin-top:5px}
+.effectuer_retour .adresse_facturation{float:left;background-color:#EEE;width:207px;height:70px;padding:10px}
+.effectuer_retour .adresse_livraison{float:left;margin-left:20px;background-color:#EEE;width:207px;height:70px;padding:10px}
+
+.effectuer_retour .soustableau{width:668px;height:90px;border: 1px solid #eeeeee;margin-bottom:20px;padding-top:10px;padding-bottom:10px}
+.effectuer_retour .soustableau p{line-height:20px}
+.effectuer_retour .soustableau .separation .vide{text-align:left;margin-left:10px}
+.effectuer_retour .soustableau .separation{overflow: hidden;padding: 3px 0px;width:668px}
+.effectuer_retour .soustableau .separation *{float:left;text-align:center}
+
+
+/*-------------------------------------------------gabarit contenu -------------------------------------------------------------------------*/
+#clients.conditions .contenu_blanc{padding:0px;height:auto;background:none}
+#clients.conditions #contenu_interieur{width:990px;padding:0px;}
+.conditions .coordonnees a img{margin-top:6px;margin-left:300px}
+.conditions input{margin-top:3px;color:#cccccc}
+.conditions .contenu_interieur{width:990px;background:none}
+.conditions .contenu_coordonnees a{text-decoration:underline; color:#000000; font-size:10px}
+
+
+
+
+
+
+
+
+/* Hack Firefox */
+html:not([lang*=""]) .creation_compte .coordonnees_gauche select {
+width: 281px;
+}
+
+/* Hack Chrome */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.creation_compte .coordonnees_gauche select{width:281px}
+	}

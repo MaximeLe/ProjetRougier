@@ -1,0 +1,51 @@
+#bandeorange,
+#menu,
+#navigation,
+#breadcrumb,
+#footer,
+#footerSEO,
+.newsletter,
+.nav,
+.panier,
+.compte,
+.imprimer,
+.ttes_commandes,
+.btn {display:none;}
+
+#headerBG {top:0;background:#fff;}
+
+.visualiser_detail_commandes {margin:0 1%;width:98%;}
+.visualiser_detail_commandes .coordonnees {padding:6px 2%;width:96%;border:1px solid #777777;border-bottom:none;background:none;}
+.visualiser_detail_commandes .ctn_tableau {border:1px solid #777777;}
+.visualiser_detail_commandes #entete_tableau {border-bottom:1px solid #777777;}
+.visualiser_detail_commandes #ligne_ss_total {border-top:1px solid #777777;}
+
+.visualiser_detail_commandes .adresse_facturation,
+.visualiser_detail_commandes .adresse_livraison {width:30%;background:none;border:1px solid #777777;}
+
+#global,
+#header,
+.visualiser_detail_commandes .ctn_tableau,
+.visualiser_detail_commandes #entete_tableau,
+.visualiser_detail_commandes .separation,
+.visualiser_detail_commandes #ligne_ss_total,
+.visualiser_detail_commandes .separation,
+.visualiser_detail_commandes #ligne_total_commande {width:100%;margin:0;}
+
+.visualiser_detail_commandes .tableau .colonne1,
+.visualiser_detail_commandes #entete_tableau .colonne1 {width:10%;padding-left:2%;}
+.visualiser_detail_commandes .tableau .colonne2,
+.visualiser_detail_commandes #entete_tableau .colonne2 {width:26%;}
+.visualiser_detail_commandes .tableau .colonne3,
+.visualiser_detail_commandes #entete_tableau .colonne3 {width:10%;}
+.visualiser_detail_commandes .tableau .colonne4,
+.visualiser_detail_commandes #entete_tableau .colonne4 {width:20%;}
+.visualiser_detail_commandes .tableau .colonne5,
+.visualiser_detail_commandes #entete_tableau .colonne5 {width:15%;margin-right:2%}
+.visualiser_detail_commandes .tableau .colonne6,
+.visualiser_detail_commandes #entete_tableau .colonne6 {width:13%;padding-right:2%;}
+
+.visualiser_detail_commandes .separation .paiement,
+.visualiser_detail_commandes .separation .vide {width:85%;}
+.visualiser_detail_commandes .separation .montant_tot_com,
+.visualiser_detail_commandes .separation .montant_tot {width:13%;margin-right:2%;}

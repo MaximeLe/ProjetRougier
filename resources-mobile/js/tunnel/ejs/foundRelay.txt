@@ -1,0 +1,17 @@
+<span class="bold">Points relais trouv&eacute;s *</span>
+
+<p>	
+	<select onchange="javascript:changeSelectionRelay()" name="selectRelay" id="selectRelay" class="multiple_grand" multiple="multiple">		
+		<% for (var i=0; i<this.length; i++){ %>
+    	<option value="<%= this[i].relayBiz %>"> 
+    		
+    		<% if(this[i].relayName != null){ %>
+    			<%= this[i].relayName + ' ' %>
+    		<%}%>
+    		
+    		<%= this[i].zipCode + ' '  + this[i].city %>
+    	</option>
+		<% } %>
+	</select>	
+</p>
+			

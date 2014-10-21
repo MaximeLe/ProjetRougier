@@ -1,0 +1,22 @@
+/* ----------- GLOBAL --------------- */
+#conseilsexperts { 
+	margin-bottom: 20px;
+	display: block;
+	float: left;
+	width: 569px;
+}
+
+#conseilsexperts p.qconseil { 
+	width: 100%;
+	font-weight:bold;
+	line-height:16px;
+	float:left;
+	text-align:justify;
+}
+
+#conseilsexperts p.rconseil { 
+	width: 100%;
+	line-height:16px;
+	float:left;
+	text-align:justify;
+}

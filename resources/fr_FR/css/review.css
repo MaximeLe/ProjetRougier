@@ -1,0 +1,134 @@
+/*	CSS bricolé rapidement. C'est uniquement pour le Starter Store et je ne suis pas du tout initié au design web 
+	Inspiré de www.pictime.com . 
+*/
+table {
+	border: 3px solid #6495ed;
+	border-collapse: collapse;
+	width: 90%;
+	margin: auto;
+}
+
+
+thead,tfoot {
+	background-color: #D0E3FA;
+	border: 1px solid #6495ed;
+}
+
+tbody {
+	background-color: #FFFFFF;
+	border: 1px solid #6495ed;
+}
+
+th {
+	font-family: monospace;
+	border: 1px dotted #6495ed;
+	padding: 5px;
+	background-color: #EFF6FF;
+	width: 25%;
+}
+
+td {
+	font-family: sans-serif;
+	font-size: 80%;
+	border: 1px solid #6495ed;
+	padding: 5px;
+	text-align: left;
+}
+
+caption {
+	font-family: sans-serif;
+}
+
+hr {
+	color: #6495ed;
+	background-color: #6495ed;
+	height: 5px;
+	border: 0;
+}
+
+h2 {
+	font-family: sans-serif;
+	display: inline;
+	margin-left: 10px;
+	padding: 2px 10px 2px 5px;
+	border-left: 5px solid #458EFF;
+	border-bottom: 2px dotted #458EFF;
+	color: #804000;
+}
+
+#corps {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	text-align: left;
+	margin-top: 13px;
+	background-color: #FFFFFF;
+}
+
+#corps2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	text-align: left;
+	margin-top: 13px;
+	background-color: #FFFFFF;
+}
+
+#header {
+	width: 960px;
+	height: 60px;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	text-align: center;
+	background: #BDC8B3 url('../img/review/fond_degrade.gif') repeat-x;
+	padding-bottom: 25px;
+}
+
+h1 {
+	font-family: sans-serif;
+	background: #6495ed none;
+	color: white;
+	border: 3px dotted #9999FF;
+	padding: 0.3em;
+	text-align: center;
+	letter-spacing: 0.3em;
+}
+
+
+
+ul#tabnav {
+    font: bold 11px verdana, arial, sans-serif;
+    background-color:#BDC8B3;
+    list-style-type: none;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #6495ed;
+    margin: 0;
+}
+
+ul#tabnav li {
+    float: left;
+    height: 21px;
+    background-color: #D0E3FA;
+    margin: 2px 2px 0 2px;
+    border: 1px solid #6495ed;
+}
+ul#tabnav li.active {
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+}
+#tabnav a {
+    float: left;
+    display: block;
+    color: #666;
+    text-decoration: none;
+    padding: 4px;
+}
+
+#tabnav a:hover {
+    background: #fff;
+}
+
