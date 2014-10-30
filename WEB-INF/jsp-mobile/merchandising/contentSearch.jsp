@@ -6,7 +6,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib uri="http://www.pictime.com/tags/core" prefix="fwk"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-
+debut contentsearch
 <tiles:insertDefinition name="templateMenu">
 	<tiles:putAttribute name="head">
 		<style type="text/css">

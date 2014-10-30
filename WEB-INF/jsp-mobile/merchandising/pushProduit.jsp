@@ -8,7 +8,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@ taglib uri="http://www.pictime.com/tags/core" prefix="fwk"%>
-
+debut push produit
 <c:forEach items="${pushProduit}" var="catalogEntry">
 	<c:set var="urlRewriteSelling">
     	<fwk:rewrite url="/catalogEntry.html?langId=${langId}&ceId=${catalogEntry.catalogEntryId}" />

@@ -40,36 +40,86 @@ Date : 06/12/2011
 }
 
 body {background:#fff;font:11px/13px Arial, Helvetica, sans-serif; color:#666666;margin:0;padding:0;/*max-width:800px;min-width:306px;*/width:100%}
-#fondsite{/*border:10px solid black;*//*max-width:800px;min-width:306px;*/width:100%;/* margin:5% 5% 5% 5%;*/}
-
+#fondsite {/*border:10px solid black;*//*max-width:800px;min-width:306px;*/width:100%;/* margin:5% 5% 5% 5%;*/max-width:1100px;}
 
 /***	 HEADER		***/
 
-#header{/*max-width:800px;min-width:306px;*/margin : 15px 15px 15px 15px;}
-	#header .image1{/*border:1px solid #00ff00;*/width:165px;overflow:hidden;text-align:center;min-height:34px;}
-	#header .image2{/*border:1px solid #00ff00;*/height:42px;overflow:hidden;text-align:center;}
-	#header .image3{/*border:1px solid #00ff00;*/height:42px;overflow:hidden;text-align:center;}
-	#header .logo{/*border:1px solid #fb0404;*/width:51%;position:relative;margin-top:1px;}
-	#header .logo img{/*max-width:800px;*/width:100%;height:100%;text-align:center;}
-	#header .comptec{/*border:1px solid #d56a24;*/width:22%;height:40px;position:absolute;right:23%;top:15px;}
-	#header	.comptec img{margin:4px 34px;width:34px;height:34px;}
-	#header .panier{/*border:1px solid #3131c8;*/width:22%;height:40px;position:absolute;right:15px;top:15px;}
-		#header .panier .nbArticles{color:#ffffff;font-size:10px;font-family:AvantGardeLTMediumBold;position:absolute;top:4px;right:3px;text-align:center;background:url('../img/common/picto-panier.png') no-repeat 0 0;width:32px;height:32px;padding:14px 0 0 0px;}
-		#header .image .imgCentreCompte{margin:9% 0 0 0;text-align:center;}
-		#header .image .imgCentrePanier{position:absolute;top:14%;right:37%;z-index:1;}
+
+#header {/*max-width:800px;min-width:306px;*/margin : 15px 15px 15px 15px;}
+	#header .image1 {/*border:1px solid #00ff00;*/width:165px;overflow:hidden;text-align:center;min-height:34px;}
+	#header .image2 {/*border:1px solid #00ff00;*/height:42px;overflow:hidden;text-align:center;}
+	#header .image3 {/*border:1px solid #00ff00;*/height:42px;overflow:hidden;text-align:center;}
+	#header .logo {/*border:1px solid #fb0404;*/width:51%;position:relative;margin-top:1px;}
+	#header .logo img {/*max-width:800px;*/width:100%;text-align:center;}
+	#header .comptec {/*border:1px solid #d56a24;*/width:23%;height:40px;position:absolute;right:23%;top:15px;}
+	#header	.comptec img {margin:4px 34px;width:34px;height:34px;}
+	#header .panier {/*border:1px solid #3131c8;*/width:22%;height:40px;position:absolute;right:15px;top:15px;}
+		#header .panier .nbArticles {color:#ffffff;font-size:10px;font-family:AvantGardeLTMediumBold;position:absolute;top:4px;right:3px;text-align:center;background:url('../img/common/picto-panier.png') no-repeat 0 0;width:32px;height:32px;padding:14px 0 0 0px;}
+		#header .image .imgCentreCompte {margin:9% 0 0 0;text-align:center;}
+		#header .image .imgCentrePanier {position:absolute;top:14%;right:37%;z-index:1;}
 		
 	
 #header .blocRecherche {/*border:1px solid #00ffff;*/height:60px;position:relative;margin-top:13px;}		
-#header .blocRecherche .recherche{position:absolute;top:0;right:0;left:0;width:auto;font-family:avantgarde_bk_btbook;font-size:16px;border:1px solid #ef393f;}
-#header .blocRecherche .recherche input[type=submit]{cursor:pointer;border:0;color:#ffffff;text-align:center;background:url('../img/common/btn_search.png') no-repeat;position:absolute;right:1%;top:23%;}
-#header .blocRecherche .recherche #recherche{height:44px;border:0;width:100%;padding-left:61px;background:url('../img/common/loupe.gif') no-repeat 7px center, url('../img/common/btn_search.png') no-repeat right;background-size: 24px,contain;}
+#header .blocRecherche .recherche {position:absolute;top:5px;right:0;left:0;width:auto;font-family:avantgarde_bk_btbook;font-size:16px;border:1px solid #ef393f;}
+#header .blocRecherche .recherche input[type=submit] {cursor:pointer;height: 27px;border:0;color:#ffffff;text-align:center;background:url('../img/common/btn_search.png') no-repeat;position:absolute;right:1%;top:23%;}
+#header .blocRecherche .recherche #recherche {height:44px;border:0;width:100%;padding-left:61px;background:url('../img/common/loupe.gif') no-repeat 7px center, url('../img/common/btn_search.png') no-repeat right;background-size: 24px,contain;}
 
 
 /***	 NAVIGATION		***/
 
-#navigation{}
-#navEntry_0 .title{border:1px solid black;padding:15px;font-size:22px;}
-#navEntry_0 .sousNav .content li{border-left: 1px solid black;border-right: 1px solid black;padding:15px;color:black;}
-#navEntry_0 .sousNav .content li:last-child{border-bottom: 1px solid black;}
- 
-/* #global{border:1px solid #ec1318;} */
+
+/* .panel-title{font-size:40px;} */
+.panel-group .panel .panel-heading .panel-title .chevron_droit {width:15px;height:18px;position:absolute;margin-top:2px;right:46px;}
+#filtre .panel-body {padding:0}
+#navigation {}
+#navEntry_0 .title {border:1px solid black;padding:15px;font-size:22px;}
+#navEntry_0 .sousNav .content li {border-left: 1px solid black;border-right: 1px solid black;padding:15px;color:black;}
+#navEntry_0 .sousNav .content li:last-child {border-bottom: 1px solid black;}
+
+
+/***	List Produit	***/
+#contentMenu .nbArticle{margin:18px 0 0 20px;float:left;}
+#menu .msgFiltre{margin-left:16px;}
+#contentMenu .trier{margin-left:16px;margin-right:16px;}
+#contentMenu select{width: 100%;padding: 10px;font-size:13px;}
+#content #contentMenu .affiner {clear:both;}
+		
+		/* produit en fonction largeur écran */
+		
+@media  (max-width: 454px){
+#zoneP .produit {border:1px solid #d4d4d4;float:left;height:266px;padding:1px;position:relative;width:100%;}
+#zoneP .produit .visuel {height:162px;margin:2px auto;width:162px;}
+#zoneP .produit .infos {margin:0 auto;width:208px;}
+}
+@media  (min-width: 455px) and  (max-width: 679px){
+#zoneP .produit {border:1px solid #d4d4d4;float:left;height:266px;padding:1px;position:relative;width:50%;}
+#zoneP .produit .visuel {height:162px;margin:2px auto;width:162px;}
+#zoneP .produit .infos {margin:0 auto;width:208px;}	
+}
+@media  (min-width: 680px) and  (max-width: 919px){
+#zoneP .produit {border:1px solid #d4d4d4;float:left;height:266px;padding:1px;position:relative;width:33%;}
+#zoneP .produit .visuel {height:162px;margin:2px auto;width:162px;}
+#zoneP .produit .infos {margin:0 auto;width:208px;}
+}
+@media  (min-width: 920px) {
+#zoneP .produit {border:1px solid #d4d4d4;float:left;height:266px;padding:1px;position:relative;width:25%;}
+#zoneP .produit .visuel {height:162px;margin:2px auto;width:162px;}
+#zoneP .produit .infos {margin:0 auto;width:208px;}
+}
+#zoneP p {font-size: 16px;font-weight: bold;line-height: 18px;margin: 0 0 5px;}
+#zoneP .produit .infos {text-align:center;}
+#zoneP .produit .infos h2 {font-size: 12px;font-weight: normal;line-height: 14px;margin-bottom: 5px;min-height: 28px;}
+#zoneP .produit .prix {margin-top:12px;}
+#zoneP .produit .prix a {font-size:22px;color:#F40E0E}
+#zoneP .produit .stickers {position:absolute;}
+
+
+/***	ProduitMono		***/
+
+#content .labelProduit .marques {border:1px solid black;display:block;margin: 0px 15px 15px 15px;padding:11px;font-size:19px;color:#303030;}
+#content .labelProduit .nomProduit {font-size:15px;}
+#content .zInfos .infos .dispoPrix {border:1px solid black;}
+#content .zInfos .infos .dispoPrix .contenant_stock_magasin {border:1px solid red;display:inline-block;}
+#content .zInfos .infos .dispoPrix .quantity {border:1px solid green;display:inline-block;}
+#content .zInfos .infos .dispoPrix .zPrix {border: 1px solid blue;display:inline-block;}
+

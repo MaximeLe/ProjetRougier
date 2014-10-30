@@ -14,9 +14,9 @@
 	***************************************
  -->
 
-<tiles:insertDefinition name="template">
+<tiles:insertDefinition name="mobile-template">
 
-	<tiles:putAttribute name="head">
+	<tiles:putAttribute name="header">
 <!-- 		<meta http-equiv="refresh" content="5;url=/">	 -->
 	</tiles:putAttribute>
 

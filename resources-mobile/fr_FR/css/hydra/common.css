@@ -26,8 +26,8 @@
 	2. Float and Align 
 --------------------------------------------------------------------	*/
 
-.floatRight { float: right; }
-.floatLeft {color:#666666;float: left; }
+/* .floatRight { float: right; } */
+/* .floatLeft {color:#666666;float: left; } */
 .center { margin: 0 auto; }
 .borderBottom { border-bottom: 1px solid; }
 

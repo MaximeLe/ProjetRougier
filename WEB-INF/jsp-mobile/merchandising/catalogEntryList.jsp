@@ -6,10 +6,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib uri="http://www.pictime.com/tags/core" prefix="fwk"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-
+<!-- debut page -->
 <c:set var="devise"><c:choose><c:when test="${storeId==2}">&#36;</c:when><c:otherwise>€</c:otherwise></c:choose></c:set>
 
-<tiles:insertDefinition name="templateMenu">
+<tiles:insertDefinition name="mobile-templateMenu">
 	<tiles:putAttribute name="title">
 		<c:if test="${isSolde}"><spring:message code="common.soldes"/></c:if>
 		<c:choose>
@@ -119,86 +119,51 @@
 
 		<c:if test="${!empty urlEndOfSearch}">
 			| ${param.text}
-			<a href="${urlEndOfSearch}" class="filter"><img src="${contextPath}/resources/${codeIsoLang}/img/StarterStore/btn_croix.png" alt="X"/></a>
+			<a href="${urlEndOfSearch}" class="filter"><img src="${contextPath}/resources-mobile/${codeIsoLang}/img/StarterStore/btn_croix.png" alt="X"/></a>
 		</c:if>
 	</tiles:putAttribute>
 	
-	<tiles:putAttribute name="ems">
-	<!-- ${animation}  -->
-	<style type="text/css">
-	#emsCML {width:990px;height:80px;background:url("${mediaPath}/ems/emsCML_bg.png") no-repeat;margin-bottom:30px;}
-	#emsCML h1 {float:left;width:138px;margin:14px 0 0 29px;font-size:34px;color:#fff;text-align:center;line-height:26px;}
-	#emsCML h1 span {font-size:22px;}
-	#emsCML p {float:left;width:580px;margin:14px 0 0 133px;font-size:14px;line-height:17px;color:#777777;}
-	</style>
-	${CAT_PC_BANDEAU}
-	</tiles:putAttribute>
-	
-	<tiles:putAttribute name="emsSurFooter">
-	<!-- ${animation}  -->
-	${CAT_PC_SURFOOTER}
-	</tiles:putAttribute>
-	
+<%-- 	<tiles:putAttribute name="ems"> --%>
+<%-- 	 ${animation}   --%>
+<!-- 	<style type="text/css"> 
+/*  	#emsCML {width:990px;height:80px;background:url("${mediaPath}/ems/emsCML_bg.png") no-repeat;margin-bottom:30px;}  */
+/*  	#emsCML h1 {float:left;width:138px;margin:14px 0 0 29px;font-size:34px;color:#fff;text-align:center;line-height:26px;}  */
+/*  	#emsCML h1 span {font-size:22px;} */ */
+/*  	#emsCML p {float:left;width:580px;margin:14px 0 0 133px;font-size:14px;line-height:17px;color:#777777;}  */
+<!-- 	</style> -->
+<%-- 	${CAT_PC_BANDEAU} --%>
+<%-- 	</tiles:putAttribute> --%>
+<%-- 	<tiles:putAttribute name="emsSurFooter"> --%>
+<%-- 	 ${animation}   --%>
+<%-- 	${CAT_PC_SURFOOTER} --%>
+<%-- 	</tiles:putAttribute> --%>
+
 	<tiles:putAttribute name="menu">
 		<div id="menu">
-			<div class="nbArticle">${facetResult.numFound}<span>&nbsp;articles disponibles</span></div>
-			<!-- Construction Statique -->
-			<ul class="cat">
-				<c:choose>
-					<%-- Si c'est une catégorie sur 2 niveaux --%>
-					<c:when test="${currentParentCategoryId != null}">
-					
-						<c:forEach items="${menuCategories}" var="menuParent">
-							<c:choose>
-								<c:when test="${menuParent.key.categoryId == currentParentCategoryId}">
-									<li class="on">${menuParent.key.categoryDescriptions[langId].title}
-									<ul style="display: block;">
-								</c:when>
-								<c:otherwise>
-									<li>${menuParent.key.categoryDescriptions[langId].title}
-									<ul style="display: none;">
-								</c:otherwise>
-							</c:choose>
-							<c:forEach items="${menuParent.value}" var="menuFils">
-								<c:choose>
-									<c:when test="${menuFils.categoryId == currentCategoryId}">
-										<li><a href="${menuFils.categoryDescriptions[langId].aliasUrl}" class="bold">${menuFils.categoryDescriptions[langId].title}</a></li>
-									</c:when>
-									<c:otherwise>
-										<li><a href="${menuFils.categoryDescriptions[langId].aliasUrl}">${menuFils.categoryDescriptions[langId].title}</a></li>
-									</c:otherwise>
-								</c:choose>
-							</c:forEach>
-							</ul>
-							</li>
-						</c:forEach>
-					
-					</c:when>
-<%-- 					Si c'est une catégorie sur 1 niveau --%>
-					<c:otherwise>
-						
-						<c:forEach items="${menuCategories}" var="menuParent">
-							<c:if test="${ currentCategoryId == menuParent.key.categoryId}">
-								<li class="only on"> <a href="${menuParent.key.categoryDescriptions[langId].aliasUrl}">${menuParent.key.categoryDescriptions[langId].title}</a></li>
-							</c:if>
-							<c:if test="${ currentCategoryId != menuParent.key.categoryId}">
-								<li class="only"><a href="${menuParent.key.categoryDescriptions[langId].aliasUrl}">${menuParent.key.categoryDescriptions[langId].title}</a></li>
-							</c:if>
-						</c:forEach>
-						
-					</c:otherwise>
-				</c:choose>
-				
-			</ul>
-			
-			<div class="msgFiltre"><spring:message code="catalogue.affinezVotreRecherche"/></div>
-			<div class="filtre">
+<%-- 			<div class="msgFiltre"><spring:message code="catalogue.affinezVotreRecherche"/></div> --%>
 				<!-- Version Dynamique -->
-				<c:forEach items="${facetResult.facets}" var="facet">
-					<c:if test="${facet.fieldName != 'hids' && facet.libelleWeb != 'categoryIds'}">
-						<ul>
-							<li>${facet.libelleWeb} :<br/></li>
-							<c:choose>
+				
+				
+					<div class="panel-group col-lg-6">
+					    <div class="panel panel-default">
+					      <div class="panel-heading"> 
+					        <h3 class="panel-title">
+					          <a class="accordion-toggle" href="#ffiltre" data-toggle="collapse"style="display:block;"> Filtrer </a> 
+					        </h3>
+					      </div>
+					      <div id="ffiltre" class="panel-collapse collapse ">
+					        <div class="panel-body"> 
+					      			<c:forEach items="${facetResult.facets}" var="facet">
+					<c:if test="${facet.fieldName != 'hids' && facet.libelleWeb != 'categoryIds'}">					
+						<div class="col-lg-6">
+						  <div class="panel panel-info">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" href="#${facet.libelleWeb}">${facet.libelleWeb}</a>
+						      </h4>
+						    </div>
+						    <ul id="${facet.libelleWeb}" class="list-group collapse in">
+							  	<c:choose>
 								<c:when test="${!empty facet.values}">
 							<c:forEach items="${facet.values}" var="value">
 							<li>
@@ -256,19 +221,27 @@
 									</c:forEach>
 								</c:otherwise>
 							</c:choose>
-						</ul>
+						    </ul>
+						  </div>
+						</div>
 						</c:if>
 					</c:forEach>		
-			</div>
+					        </div>
+					      </div>
+					    </div>
+					</div>
+
+
+						
+<script src="${contextPath}/resources-mobile/js/jquery.js"></script>
+<script src="${contextPath}/bootstrap/js/bootstrap.min.js"></script>
+						
+	
 		</div>
 	</tiles:putAttribute>
-	
 	<tiles:putAttribute name="content">
 		<div id="contentMenu" class="catalogEntryList">
 			<div class="affiner">
-				<!-- ${facetResult.numFound}&nbsp;<spring:message code="catalogue.produits"/> -->
-				<div class="afficher"><spring:message code="catalogue.afficher"/><a href="${urlRewritePageSize}${pageSize}">${pageSize} articles</a>&nbsp;|&nbsp;<a href="${urlRewritePageSize}200"><spring:message code="catalogue.tous"/></a></div>
-				<div class="pagination"><jsp:include page="paging.jsp" /></div>
 				<div class="trier">
 					<select name="sort"  onchange="order(this)">
 						<option value=""><spring:message code="catalogue.trierPar"/></option>
@@ -277,8 +250,14 @@
 					</select>
 				</div>
 			</div>
-			
+				<div class="nbArticle">${facetResult.numFound}<span>&nbsp;articles disponibles</span></div>
+				<div class="pagination"><jsp:include page="paging.jsp" /></div>	
+				<div class="clear"></div>
+						
+
 			<!-- Boucle de produits -->
+
+
 			<div id="zoneP">
 			
 			<c:forEach items="${facetResult.docs}" var="document" varStatus="status">
@@ -340,9 +319,9 @@
 					<div class="visuel">
 						<a href="${urlEc}" title="<spring:message code="catalogue.boutonVoirProduit"/>">
 							<c:choose>
-								<c:when test="${status.index == 0 && facetContext.page == 1}">
-									<img src="${catalogPath}/${document.attr['img_liste_mea']}" alt="${document.attr['title']}" border="0" />
-								</c:when>
+<%-- 								<c:when test="${status.index == 0 && facetContext.page == 1}"> --%>
+<%-- 									<img src="${catalogPath}/${document.attr['img_liste_mea']}" alt="${document.attr['title']}" border="0" /> --%>
+<%-- 								</c:when> --%>
 								<c:when test="${document.attr['img_liste'] != null}">
 									<img src="${catalogPath}/${document.attr['img_liste']}" alt="${document.attr['title']}" border="0" />
 								</c:when>
@@ -360,9 +339,9 @@
 							<c:if test="${!empty document.attr['basePrice'] and document.attr['basePrice'] != document.attr['price']}"><span class="prixBarre"><fwk:priceFormater price="${document.attr['basePrice']}" format="$1,$2 ${devise}"/></span></c:if>
 							<c:if test="${document.attr['price'] > 0}"><a href="${urlEc}"><fwk:priceFormater price="${document.attr['price']}" format="$1,$2 ${devise}"/></a></c:if>
 						</div>
-						<c:if test="${facetContext.page ==1 and status.index == 0}">
-							<a href="${urlEc}" title="<spring:message code="catalogue.boutonVoirProduit"/>"><img src="${contextPath}/resources/${codeIsoLang}/img/merchandising/btn_voirProduit.png" width="116" height="28" alt="<spring:message code="catalogue.boutonVoirProduit"/>" border="0"/></a>
-						</c:if>
+<%-- 						<c:if test="${facetContext.page ==1 and status.index == 0}"> --%>
+<%-- 							<a href="${urlEc}" title="<spring:message code="catalogue.boutonVoirProduit"/>"><img src="${contextPath}/resources/${codeIsoLang}/img/merchandising/btn_voirProduit.png" width="116" height="28" alt="<spring:message code="catalogue.boutonVoirProduit"/>" border="0"/></a> --%>
+<%-- 						</c:if> --%>
 					</div>
 				</div>
 			</c:forEach>
@@ -370,10 +349,10 @@
 					<div class="ems">${REASSURANCE_LIST}</div>
 				</c:if>
 		</div>
-			
+			<div class="clear"></div>
 			<div class="affiner">
 				<!-- ${facetResult.numFound}&nbsp;<spring:message code="catalogue.produits"/> -->
-				<div class="afficher"><spring:message code="catalogue.afficher"/><a href="${urlRewritePageSize}${pageSize}">${pageSize} articles</a>&nbsp;|&nbsp;<a href="${urlRewritePageSize}200"><spring:message code="catalogue.tous"/></a>&nbsp;&nbsp;<spring:message code="catalogue.parPage"/></div>
+				<div class="nbArticle">${facetResult.numFound}<span>&nbsp;articles disponibles</span></div>
 				<div class="pagination"><jsp:include page="paging.jsp" /></div>
 				<div class="trier">
 					<select name="sort"  onchange="order(this)">
@@ -397,5 +376,8 @@
 		<c:if test="${isTagMetafiliationActivated }">
 			<script type="text/javascript" src="http://img.metaffiliation.com/u/11/p33385.js?zone=categorie&idcategorie=${fn:trim(category.categoryBiz) }"></script>
 		</c:if>
+		
+    
+<!-- 		fin de la page ? -->
 	</tiles:putAttribute>
 </tiles:insertDefinition>

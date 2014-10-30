@@ -6,12 +6,12 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <%@ taglib uri="http://www.pictime.com/tags/core" prefix="fwk"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-
+<!-- début catalogEntryDiscriminant -->
 <c:set var="devise"><c:choose><c:when test="${storeId==2}">&#36;</c:when><c:otherwise>€</c:otherwise></c:choose></c:set>
 <c:set var="urlRewrite"><fwk:rewrite url="/ajax/catalogEntry.html"/></c:set>
 <c:set var="urlCanonical"><fwk:rewrite url="${ceDisplay.urlWithoutEcId}${ceDisplay.catalogEntry.catalogEntryId}"/></c:set>
 
-<tiles:insertDefinition name="template">
+<tiles:insertDefinition name="mobile-templateMenu">
 <tiles:putAttribute name="title">
 	<c:if test="${not empty ceDisplay.catalogEntryDescription.title1}">${ceDisplay.catalogEntryDescription.title1}&nbsp;</c:if>
 	<c:if test="${not empty ceDisplay.catalogEntry.attributesNormalizedMapBizKey['MARQUE'].attributeNormalizeValues[0].attributeValueDescriptions[langId].description}">${ceDisplay.catalogEntry.attributesNormalizedMapBizKey['MARQUE'].attributeNormalizeValues[0].attributeValueDescriptions[langId].description}&nbsp;</c:if><spring:message code="catalogue.title"/>
@@ -21,10 +21,10 @@
 
 <tiles:putAttribute name="head">
 	<link rel="image_src" href="${catalogPath}${ceDisplay.catalogEntryImage[0].path}" />
-	<link href="${contextPath}/resources/${codeIsoLang}/css/modal.css" rel="stylesheet" type="text/css" />
-	<link href="${contextPath}/resources/${codeIsoLang}/css/conseilexpert.css" rel="stylesheet" type="text/css" />
-	<link href="${contextPath}/resources/js/shadowbox/shadowbox.css" rel="stylesheet" type="text/css" />
-	<link href="${contextPath}/resources/${codeIsoLang}/css/jquery-bubble-popup-v3.css" rel="stylesheet" type="text/css" />
+	<link href="${contextPath}/resources-mobile/${codeIsoLang}/css/modal.css" rel="stylesheet" type="text/css" />
+	<link href="${contextPath}/resources-mobile/${codeIsoLang}/css/conseilexpert.css" rel="stylesheet" type="text/css" />
+	<link href="${contextPath}/resources-mobile/js/shadowbox/shadowbox.css" rel="stylesheet" type="text/css" />
+	<link href="${contextPath}/resources-mobile/${codeIsoLang}/css/jquery-bubble-popup-v3.css" rel="stylesheet" type="text/css" />
 	<meta name="og:title" content="${ceDisplay.catalogEntryDescription.title1}" />
 	<meta name="og:type" content="product" />
 	<meta name="og:url" content="http://${pageContext['request'].serverName}${urlCanonical}" />
@@ -35,21 +35,20 @@
 	<meta name="fb:page_id" content="${facebookPageId}" />
 </tiles:putAttribute>
 
+
+
 <tiles:putAttribute name="microformat">itemscope itemtype="http://schema.org/ItemPage"</tiles:putAttribute>
 
-	<tiles:putAttribute name="breadcrumb">
-		<c:import url="importBreadcrumbCatalogEntry.jsp"></c:import>
-		<div class="floatRight retour"><a href="javascript:history.back();">Retour</a></div>
-	</tiles:putAttribute>
+<%-- 	<tiles:putAttribute name="breadcrumb"> --%>
+<%-- 		<c:import url="importBreadcrumbCatalogEntry.jsp"></c:import> --%>
+<!-- 		<div class="floatRight retour"><a href="javascript:history.back();">Retour</a></div> -->
+<%-- 	</tiles:putAttribute> --%>
 	
 	<tiles:putAttribute name="content">
 		<div id="content" class="catalogEntry" itemscope itemtype="http://schema.org/Product">
-			<c:import url="importVisuelCatalogEntry.jsp"/>
-			
-			<div class="zInfos">
-				<div class="infos">
-					<div class="marque" itemprop="brand" itemscope itemtype="http://schema.org/Organization">
-        				<span itemprop="name">
+			<div class="labelProduit">
+				<div class="marque" itemprop="brand" itemscope itemtype="http://schema.org/Organization">
+				<span class="marques" itemprop="name">
         					<c:choose>
         						<c:when test="${empty brandBean }">
 									<c:forEach items="${ceDisplay.catalogEntry.attributesNormalizedMapBizKey}" var="attributNormalized">
@@ -64,9 +63,17 @@
 									<a class="brandLink" href="${brandBean.link}">${brandBean.name}</a>
 								</c:otherwise>
 							</c:choose>
+							<span class="nomProduit">  -  ${ceDisplay.catalogEntryDescription.title1}</span>
 						</span>
-					</div>
-					<h1 itemprop="name">${ceDisplay.catalogEntryDescription.title1}</h1>
+				</div>
+			</div>
+			<c:import url="importVisuelCatalogEntry.jsp"/>
+			
+			<div class="zInfos">
+				<div class="infos">
+					
+        				
+					
 					<c:if test="${((context.instanceType) == 'STORE_PREVIEW') && (context.siteEditMode)}">
 						<span style="margin-left: 5px;">
 							<a href="/StoreManager/secure/CAT/ModifierPropAttributsWebGeneral.htm?entreeCatId=${ceDisplay.catalogEntry.catalogEntryId}&lg=${langId}" title="modifier l'entrée de catalogue" target="storeManager"><img src="${contextPath}/resources/${codeIsoLang}/img/common/modifyBlack.png" style="border: 0px;"/></a>
@@ -86,14 +93,14 @@
 					</c:if>
 					
 					<!-- Stock Magasin -->
-					<c:if test="${stockMagasinActivated}">
-						<div class="contenant_wording_disponibilite">
-							<span class="wordingDisponibilite">Disponibilité de ce produit :</span>
-						</div>
-					</c:if>
-					
-					<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-					
+<%-- 					<c:if test="${stockMagasinActivated}"> --%>
+<!-- 						<div class="contenant_wording_disponibilite"> -->
+<!-- 							<span class="wordingDisponibilite">Disponibilité de ce produit :</span> -->
+<!-- 						</div> -->
+<%-- 					</c:if> --%>
+
+					<div class="dispoPrix" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+
 						<c:choose>
 							<c:when test="${stockMagasinActivated}">
 								<div class="contenant_stock_magasin">
@@ -102,29 +109,16 @@
 									</div>
 									<div class="disponibilite">
 										<span class="separateur">:</span>
-										<div id="dispoWeb" style="float:left">
-											
-										</div>
+										<div id="dispoWeb" style="float: left"></div>
 									</div>
 								</div>
-						
-								<div class="contenant_stock_magasin">
-									<div class="emplacement">
-										<span class="enMagasin">En magasin</span>
-									</div>
-									<div class="disponibilite">
-										<span class="separateur">:</span>
-										<div id="dispoMagasin" class="disponibiliteMagasin">
-								
-										</div>
-										<div id="infoBulleMagasin" class="informationsBulleMagasin">
+<!-- 								<div id="infoBulleMagasin" class="informationsBulleMagasin"> -->
 
-										</div>
-										<div id="informationsMagasin" class="infosMagasin">
+<!-- 								</div> -->
+<!-- 								<div id="informationsMagasin" class="infosMagasin"></div> -->
+					
 
-										</div>
-									</div>
-								</div> 
+				 
 							</c:when>
 							
 							<c:otherwise>
@@ -134,7 +128,7 @@
 							</c:otherwise>
 						</c:choose>
 						
-						<div id="discriminantChoice"></div>
+<!-- 						<div id="discriminantChoice"></div> -->
 						
 						<div class="quantity" style="clear:both">
 							<div class="select">
@@ -142,7 +136,6 @@
 								<input type="text" id="quantityDiscriminant" value="1" maxlength="4">
 								<img onClick="incQuantityDiscriminant(${ceDisplay.catalogEntry.catalogEntryId});" src="${contextPath}/resources/${codeIsoLang}/img/merchandising/btn_plus.png" width="15" height="15" alt="" border="0"/>
 							</div>
-							
 							<c:set var="quantiteMinimum"></c:set>
 							<c:forEach items="${ceDisplay.catalogEntry.attributesMapBizKey}" var="attribut">
 								<c:if test="${attribut.value.attributeBiz == 'QUANTITE_MINIMUM'}">
@@ -155,7 +148,6 @@
 								<div class="txt">Quantité minimum&nbsp;${quantiteMinimum}</div>
 							</c:if>
 						</div>
-						
 						<div class="zPrix">
 							<c:choose>
 								<c:when test="${!empty ceDisplay.catalogEntryPrice.basePrice and ceDisplay.catalogEntryPrice.basePrice != ceDisplay.catalogEntryPrice.price}">
@@ -174,41 +166,40 @@
 									</div>
 								</c:otherwise>
 							</c:choose>
-							<meta itemprop="priceCurrency" content="EUR" />
-							<div class="addBasket">
-							<c:choose>
-								<c:when test="${ceDisplay.child!=null}">
-									<c:set var="oneSKU" value="false"/>
-									<c:forEach items="${ceDisplay.child}" var="child">
-										<c:if test="${!oneSKU && child.catalogEntry.catalogEntryTypeId == 2}">
-											<img src="${contextPath}/resources/${codeIsoLang}/img/merchandising/btn_ajoutPanier.png" onclick="addToCartDiscriminantProduct(${ceDisplay.catalogEntryPrice.catalogEntryId});" width="169" height="38" alt="Ajouter au panier" border="0"/>
-											<c:set var="oneSKU" value="true"/>
-										</c:if>
-									</c:forEach>
-								</c:when>
-								<c:when test="${ceDisplay.child==null && ceDisplay.catalogEntry.catalogEntryTypeId == 2}">
-									<img src="${contextPath}/resources/${codeIsoLang}/img/merchandising/btn_ajoutPanier.png" onclick="addToCartNonDiscriminantProduct(${ceDisplay.catalogEntry.catalogEntryId});" width="169" height="38" alt="Ajouter au panier" border="0"/>
-								</c:when>
-							</c:choose>
-							</div>
-							<div class="addList">Ajouter à ma liste</div>
+<!-- 							<meta itemprop="priceCurrency" content="EUR" /> -->
+<!-- 							<div class="addBasket"> -->
+<%-- 							<c:choose> --%>
+<%-- 								<c:when test="${ceDisplay.child!=null}"> --%>
+<%-- 									<c:set var="oneSKU" value="false"/> --%>
+<%-- 									<c:forEach items="${ceDisplay.child}" var="child"> --%>
+<%-- 										<c:if test="${!oneSKU && child.catalogEntry.catalogEntryTypeId == 2}"> --%>
+<%-- 											<img src="${contextPath}/resources/${codeIsoLang}/img/merchandising/btn_ajoutPanier.png" onclick="addToCartDiscriminantProduct(${ceDisplay.catalogEntryPrice.catalogEntryId});" width="169" height="38" alt="Ajouter au panier" border="0"/> --%>
+<%-- 											<c:set var="oneSKU" value="true"/> --%>
+<%-- 										</c:if> --%>
+<%-- 									</c:forEach> --%>
+<%-- 								</c:when> --%>
+<%-- 								<c:when test="${ceDisplay.child==null && ceDisplay.catalogEntry.catalogEntryTypeId == 2}"> --%>
+<%-- 									<img src="${contextPath}/resources/${codeIsoLang}/img/merchandising/btn_ajoutPanier.png" onclick="addToCartNonDiscriminantProduct(${ceDisplay.catalogEntry.catalogEntryId});" width="169" height="38" alt="Ajouter au panier" border="0"/> --%>
+<%-- 								</c:when> --%>
+<%-- 							</c:choose> --%>
+<!-- 							</div> -->
+<!-- 							<div class="addList">Ajouter à ma liste</div> -->
 						</div>
-						<br/>
-					</div>
+					
+</div>
 				</div>
-				
-				<c:import url="importInfoPlusCatalogEntry.jsp"></c:import>
+<%-- 				<c:import url="importInfoPlusCatalogEntry.jsp"></c:import> --%>
 				
 				<c:import url="importOngletsTechniquesCatalogEntry.jsp"></c:import>
 				
-				<c:import url="importCarouselFicheProduit.jsp"></c:import>
+<%-- 				<c:import url="importCarouselFicheProduit.jsp"></c:import> --%>
 			</div>
 	
 			<div class="clear"></div>
 			
 			<c:import url="importAvisClientAndIdeesRealisations.jsp"/>
 			
-			<c:import url="importCrossUpSelling.jsp"/>
+<%-- 			<c:import url="importCrossUpSelling.jsp"/> --%>
 			
 			<div class="clear"></div>
 		</div>

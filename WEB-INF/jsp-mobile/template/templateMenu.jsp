@@ -30,13 +30,17 @@
 		
 		<!-- Canon et CSS -->
 		<link rel="canonical" href="${canonical}" />
-		<link rel="shortcut icon" href="${contextPath}/resources/fr_FR/img/common/favicon16.ico"> 
-		<link rel="icon" type="image/ico" href="${contextPath}/resources/fr_FR/img/common/favicon16.ico"> 
-		<link rel="shortcut icon" type="images/x-icon" href="${contextPath}/resources/fr_FR/img/common/favicon16.ico" />
+		<link rel="shortcut icon" href="${contextPath}/resources-mobile/fr_FR/img/common/favicon16.ico"> 
+		<link rel="icon" type="image/ico" href="${contextPath}/resources-mobile/fr_FR/img/common/favicon16.ico"> 
+		<link rel="shortcut icon" type="images/x-icon" href="${contextPath}/resources-mobile/fr_FR/img/common/favicon16.ico" />
+		
+		<link href="${contextPath}/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="${contextPath}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		
 		<c:if test="${not empty robots }"><meta name="robots" content="${robots }"/>
 		</c:if>
 
-		<link href="${contextPath}/resources/${codeIsoLang}/css/screen.css?2" rel="stylesheet" type="text/css" />
+		<link href="${contextPath}/resources-mobile/${codeIsoLang}/css/screen.css?2" rel="stylesheet" type="text/css" />
 		<!--[if lt IE 8]><link href="${contextPath}/resources/${codeIsoLang}/css/ie.css" rel="stylesheet" type="text/css" /><![endif]-->
 		
 		<tiles:insertAttribute name="rel_prev" />
@@ -75,41 +79,41 @@
 	<div id="fondsite">
 		<!-- Header (header.jsp) -->
 		<c:import url="/header.html"/>
-		<fwk:cache key="headerTemplate:navigation:storeId=${storeId}:langId=${langId}:catalogId=${catalogId}">
-			<c:import url="/navigation.html"/>
-		</fwk:cache>
+<%-- 		<fwk:cache key="headerTemplate:navigation:storeId=${storeId}:langId=${langId}:catalogId=${catalogId}"> --%>
+<%-- 			<c:import url="/navigation.html"/> --%>
+<%-- 		</fwk:cache> --%>
 		<div id="global">		
 			<!-- Chemin -->
-			<div id="breadcrumb" itemprop="breadcrumb">
-				<tiles:insertAttribute name="breadcrumb" />
-			</div>	
+<!-- 			<div id="breadcrumb" itemprop="breadcrumb"> -->
+<%-- 				<tiles:insertAttribute name="breadcrumb" /> --%>
+<!-- 			</div>	 -->
 			
 			<!-- EMS -->
-			<tiles:insertAttribute name="ems" />
+<%-- 			<tiles:insertAttribute name="ems" /> --%>
 			<!-- Contenu -->
 			<div id="content">
-				<!-- Menu -->
+				<!-- Filtre -->
 				<tiles:insertAttribute name="menu"/>
 				<!-- Contenu -->
 				<tiles:insertAttribute name="content"/>
 			</div>
 			<tiles:insertAttribute name="emsSurFooter" />
 			<!-- Footer (footer.jsp) -->
-			<fwk:cache key="footer:storeId=${storeId}:langId=${langId}:catalogId=${catalogId}">
-				<c:import url="/footer.html?storeId=${storeId}&langId=${langId}&catalogId=${catalogId}&lol=2"/>	
-			</fwk:cache>
+<%-- 			<fwk:cache key="footer:storeId=${storeId}:langId=${langId}:catalogId=${catalogId}"> --%>
+<%-- 				<c:import url="/footer.html?storeId=${storeId}&langId=${langId}&catalogId=${catalogId}&lol=2"/>	 --%>
+<%-- 			</fwk:cache> --%>
 			
-			<c:choose>
-				<c:when test="${category != null}">
-					<c:import url="/footerSeo.html?categoryId=${category.categoryId}"/>
-				</c:when>
-				<c:when test="${catalog != null && category == null}">
-					<c:import url="/footerSeo.html?catalogId=${catalog.catalogId}"/>
-				</c:when>
-				<c:otherwise>
-					<c:import url="/footerSeo.html"/>
-				</c:otherwise>
-			</c:choose>
+<%-- 			<c:choose> --%>
+<%-- 				<c:when test="${category != null}"> --%>
+<%-- 					<c:import url="/footerSeo.html?categoryId=${category.categoryId}"/> --%>
+<%-- 				</c:when> --%>
+<%-- 				<c:when test="${catalog != null && category == null}"> --%>
+<%-- 					<c:import url="/footerSeo.html?catalogId=${catalog.catalogId}"/> --%>
+<%-- 				</c:when> --%>
+<%-- 				<c:otherwise> --%>
+<%-- 					<c:import url="/footerSeo.html"/> --%>
+<%-- 				</c:otherwise> --%>
+<%-- 			</c:choose> --%>
 			
 		</div>
 	</div>

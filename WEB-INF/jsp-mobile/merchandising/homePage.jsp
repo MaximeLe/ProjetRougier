@@ -23,51 +23,6 @@
 			<link href="http://${pageContext['request'].serverName}${image}" rel="image_src" />
 		</c:forEach>
 	</tiles:putAttribute>
-	<tiles:putAttribute name="content">
-		<!-- Contenu -->
-			<div id="content" class="homePage">
-				<!-- Visionneuse Jquery -->
-				<div id="visio">
-					<div class="prev"><img src="${contextPath}/resources-mobile/${codeIsoLang}/img/merchandising/visioPrev.png" width="17" height="28" alt="" border="0"/></div>
-						<div class="scroll">
-<!-- 							<div class="content"> -->
-<%-- 	 							${HP_PRINCIPAL} --%>
-<!-- 							</div> -->
-							<ul class="numero">
-								<li class="on"></li>
-							</ul>
-						</div>
-						<div class="next"><img src="${contextPath}/resources-mobile/${codeIsoLang}/img/merchandising/visioNext.png" width="17" height="28" alt="" border="0"/></div>
-				</div>
-
-			<p>
-				TOTO 
-			</p>
-			
-			
-<!-- 			<!-- 3 EMS Bas --> -->
-<!-- 			<div class="emsBas"> -->
-<%-- 				${HP_BAS_GAUCHE} --%>
-<!-- 			</div> -->
-			
-<!-- 			<div class="emsBas"> -->
-<%-- 				${HP_BAS_CENTRE} --%>
-<!-- 			</div> -->
-			
-<!-- 			<div class="emsBas last"> -->
-<%-- 				${HP_BAS_DROIT} --%>
-<!-- 			</div> -->
-			
-<!-- 			<!-- Marques --> -->
-<!-- 			<div class="marques"> -->
-<%-- 				${HP_BANDEAU_BAS} --%>
-<!-- 			</div> -->
-<!-- 			<div class="seoHP"> -->
-<%-- 				${HP_SEO_BAS} --%>
-<!-- 			</div> -->
-<!-- 		</div> -->
-		<!-- Fin Contenu -->
-	</tiles:putAttribute>
 	
 	<tiles:putAttribute name="moreJS">
 		<script src="${contextPath}/resources-mobile/js/merchandising/catalogEntry.js" type="text/javascript"></script>

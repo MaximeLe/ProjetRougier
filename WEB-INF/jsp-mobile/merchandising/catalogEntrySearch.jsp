@@ -6,10 +6,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib uri="http://www.pictime.com/tags/core" prefix="fwk"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-
+<!-- début catalogEntrySearch -->
 <c:set var="devise"><c:choose><c:when test="${storeId==2}">&#36;</c:when><c:otherwise>€</c:otherwise></c:choose></c:set>
 
-<tiles:insertDefinition name="templateMenu">
+<tiles:insertDefinition name="mobile-templateMenu">
 	<tiles:putAttribute name="head">
 		<style type="text/css">
 			.templateMenu #contenu {
@@ -57,19 +57,26 @@
 	
 		<tiles:putAttribute name="menu">
 		<div id="menu">
-			<div class="nbArticle">${facetResult.numFound}<span>&nbsp;articles disponibles</span></div>
-		
-			
-			<div class="msgFiltre"><spring:message code="catalogue.affinezVotreRecherche"/></div>
-			<div class="filtre">
-				
-				<!-- Version Dynamique -->
-				<c:forEach items="${facetResult.facets}" var="facet">
-					<c:if test="${facet.fieldName != 'hids' }">
-<%-- 						<c:if test="${facet.libelleWeb == 'Prix' || facet.libelleBiz == 'MARQUE' || facet.libelleBiz == 'ARBORESCENCE' }"> --%>
-						<ul>
-							<li>${facet.libelleWeb} :<br/></li>
-							<c:choose>
+		<div class="panel-group col-lg-6">
+					    <div class="panel panel-default">
+					      <div class="panel-heading"> 
+					        <h3 class="panel-title">
+					          <a class="accordion-toggle" href="#filtre" data-toggle="collapse"style="display:block;"> Filtrer </a> 
+					        </h3>
+					      </div>
+					      <div id="filtre" class="panel-collapse collapse ">
+					        <div class="panel-body"> 
+					      			<c:forEach items="${facetResult.facets}" var="facet">
+					<c:if test="${facet.fieldName != 'hids' && facet.libelleWeb != 'categoryIds'}">					
+						<div class="col-lg-6">
+						  <div class="panel panel-info">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" href="#${facet.libelleWeb}">${facet.libelleWeb}</a>
+						      </h4>
+						    </div>
+						    <ul id="${facet.libelleWeb}" class="list-group collapse in">
+							  	<c:choose>
 								<c:when test="${!empty facet.values}">
 							<c:forEach items="${facet.values}" var="value">
 							<li>
@@ -81,6 +88,7 @@
 										<input type="checkbox" name="${value.id}" id="${value.id}" onclick="addAFilter(this, '${facet.fieldName}')"/>
 									</c:otherwise>
 								</c:choose>	
+<%-- 								///value.selected = "${value.selected}" // value.id = "${value.id}" // value.image = "${value.image}" // value.count = "${value.count}"/// --%>
 								<c:choose>
 									<c:when test="${!empty value.image}">
 										<label for="${value.id}"><img src="${value.image}" title="${value.value}" alt="${value.value}" /></label>
@@ -100,7 +108,7 @@
 													<input type="checkbox" name="[${ranges.startValue} TO ${ranges.endValue}]" onclick="addAFilter(this, '${facet.fieldName}')" checked="checked" />
 												</c:when>
 												<c:otherwise>
-													<input type="checkbox" name="[${ranges.startValue} TO ${ranges.endValue}]" onclick="addAFilter(this, '${facet.fieldName}')"/>												
+													<input type="checkbox" name="[${ranges.startValue} TO ${ranges.endValue}]" onclick="addAFilter(this, '${facet.fieldName}')"/>
 												</c:otherwise>
 											</c:choose>
 											<label for="">
@@ -127,12 +135,22 @@
 									</c:forEach>
 								</c:otherwise>
 							</c:choose>
-						</ul>
-<%-- 						</c:if> --%>
-					</c:if>
-					</c:forEach>
-			</div>
-		</div>
+						    </ul>
+						  </div>
+						</div>
+						</c:if>
+					</c:forEach>		
+					        </div>
+					      </div>
+					    </div>
+					</div>
+
+
+						
+<script src="${contextPath}/resources-mobile/js/jquery.js"></script>
+<script src="${contextPath}/bootstrap/js/bootstrap.min.js"></script>
+						
+	
 	</tiles:putAttribute>
 
 
@@ -140,8 +158,6 @@
 		<div id="contentMenu" class="catalogEntryList">
 			<div class="affiner">
 				<!-- ${facetResult.numFound}&nbsp;<spring:message code="catalogue.produits"/> -->
-				<div class="afficher"><spring:message code="catalogue.afficher"/><a href="${urlRewritePageSize}${pageSize}">${pageSize} articles</a>&nbsp;|&nbsp;<a href="${urlRewritePageSize}200"><spring:message code="catalogue.tous"/></a></div>
-				<div class="pagination"><jsp:include page="paging.jsp" /></div>
 				<div class="trier">
 					<select name="sort"  onchange="order(this)">
 						<option value=""><spring:message code="catalogue.trierPar"/></option>
@@ -149,12 +165,15 @@
 						<option value="price:desc" ${(paramOrderField == 'price:desc')? 'selected="selected"':''}><spring:message code="catalogue.prixPlusEleve"/></option>
 					</select>
 				</div>
+				<div class="nbArticle">${facetResult.numFound}<span>&nbsp;articles disponibles</span></div>
+				<div class="pagination"><jsp:include page="paging.jsp" /></div>
+				<div class="clear"></div>
 			</div>
 			<div id="zoneP">
 				<c:forEach items="${facetResult.docs}" var="document" varStatus="status">
-					<c:if test="${not empty position_ems and status.count == position_ems and nb_produits > 13}">
-					<div class="ems">${REASSURANCE_LIST}</div>
-				</c:if>
+<%-- 					<c:if test="${not empty position_ems and status.count == position_ems and nb_produits > 13}"> --%>
+<%-- 					<div class="ems">${REASSURANCE_LIST}</div> --%>
+<%-- 				</c:if> --%>
 					<c:set var="marque">
 						${document.attr[ATTR_MARQUE_ID][0]}
 					</c:set>
@@ -227,15 +246,15 @@
 					</div>
 				</c:forEach>
 			</div>
-			<c:if test="${nb_produits < 20}">
-					<div class="ems">${REASSURANCE_LIST}</div>
-				</c:if>
+<%-- 			<c:if test="${nb_produits < 20}"> --%>
+<%-- 					<div class="ems">${REASSURANCE_LIST}</div> --%>
+<%-- 				</c:if> --%>
 			
 			<div class="affiner">
 				<!-- ${facetResult.numFound}&nbsp;<spring:message code="catalogue.produits"/> -->
-				<div class="afficher"><spring:message code="catalogue.afficher"/><a href="${urlRewritePageSize}${pageSize}">${pageSize} articles</a>&nbsp;|&nbsp;<a href="${urlRewritePageSize}200"><spring:message code="catalogue.tous"/></a>&nbsp;&nbsp;<spring:message code="catalogue.parPage"/></div>
+				<div class="nbArticle">${facetResult.numFound}<span>&nbsp;articles disponibles</span></div>
 				<div class="pagination"><jsp:include page="paging.jsp" /></div>
-				<div class="trier">
+			<div class="trier">
 					<select name="sort"  onchange="order(this)">
 						<option value=""><spring:message code="catalogue.trierPar"/></option>
 						<option value="price:asc" ${(paramOrderField == 'price:asc')? 'selected="selected"':''} ><spring:message code="catalogue.prixPlusBas"/></option>

@@ -40,11 +40,12 @@
 		<link href="${contextPath}/resources-mobile/${codeIsoLang}/css/screen.css?2" rel="stylesheet" type="text/css" />
 		
 		
-		<!-- 		TUTO -->
+		<!-- Bootstrap -->
 		
 		<link href="${contextPath}/bootstrap/css/bootstrap.css" rel="stylesheet">
-   		<link href="${contextPath}/resources-mobile/${codeIsoLang}/css/tuto.css" rel="stylesheet">
-		
+		<link href="${contextPath}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   		<link href="${contextPath}/resources-mobile/${codeIsoLang}/css/sliderHomePage.css" rel="stylesheet">
+   		
 		
 		<!--[if lt IE 8]><link href="${contextPath}/resources-mobile/${codeIsoLang}/css/ie.css" rel="stylesheet" type="text/css" /><![endif]-->
 		
@@ -81,19 +82,17 @@
 	<div id="fondsite">
 			<!-- Header (header.jsp) -->
 			<c:import url="/header.html"/>
-<%-- 			<fwk:cache key="headerTemplate:navigation:storeId=${storeId}:langId=${langId}:catalogId=${catalogId}"> --%>
-<%-- 				<c:import url="/navigation.html"/> --%>
-<%-- 			</fwk:cache> --%>
+			<fwk:cache key="headerTemplate:navigation:storeId=${storeId}:langId=${langId}:catalogId=${catalogId}">
+				<c:import url="/navigation.html"/>
+			</fwk:cache>
 				
 		<div id="global">
-			<!-- Chemin -->
-			<div id="breadcrumb" itemprop="breadcrumb">
-				<tiles:insertAttribute name="breadcrumb" />
-			</div>	
 			<!-- Contenu -->
-<%-- 			<tiles:insertAttribute name="content"/> --%>
 			
-			<!-- Footer (footer.jsp) -->
+			<tiles:insertAttribute name="content"/>
+			
+<!-- 			Footer (footer.jsp) -->
+			
 <%-- 			<fwk:cache key="footer:storeId=${storeId}:langId=${langId}:catalogId=${catalogId}"> --%>
 <%-- 				<c:import url="/footer.html?storeId=${storeId}&langId=${langId}&catalogId=${catalogId}&lol=2"/>	 --%>
 <%-- 			</fwk:cache> --%>

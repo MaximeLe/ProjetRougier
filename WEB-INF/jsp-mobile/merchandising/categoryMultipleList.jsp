@@ -7,18 +7,20 @@
 <%@ taglib uri="http://www.pictime.com/tags/core" prefix="fwk"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 
-<c:set var="urlCanonical">
-	<c:choose>
-		<c:when test="${category != null}">
-			<fwk:rewrite url="${baseUrlWithoutCatalogId}&catalogId=${catalog.catalogId}&categoryId=${category.categoryId}" />
-		</c:when>
-		<c:otherwise>
-			<fwk:rewrite url="${baseUrlWithoutCatalogId}&catalogId=${catalog.catalogId}" />
-		</c:otherwise>
-	</c:choose>
-</c:set>
+<!-- DEBUT PAGE MULTICATEGORIE -->
+LAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+<%-- <c:set var="urlCanonical"> --%>
+<%-- 	<c:choose> --%>
+<%-- 		<c:when test="${category != null}"> --%>
+<%-- 			<fwk:rewrite url="${baseUrlWithoutCatalogId}&catalogId=${catalog.catalogId}&categoryId=${category.categoryId}" /> --%>
+<%-- 		</c:when> --%>
+<%-- 		<c:otherwise> --%>
+<%-- 			<fwk:rewrite url="${baseUrlWithoutCatalogId}&catalogId=${catalog.catalogId}" /> --%>
+<%-- 		</c:otherwise> --%>
+<%-- 	</c:choose> --%>
+<%-- </c:set> --%>
 
-<tiles:insertDefinition name="template">
+<tiles:insertDefinition name="mobile-template">
 	<tiles:putAttribute name="canonical" type="string">http://${pageContext['request'].serverName}${urlCanonical}</tiles:putAttribute>
 	<tiles:putAttribute name="title">
 		<c:choose>
@@ -47,64 +49,16 @@
 		</c:choose>
 	</tiles:putAttribute>
 
-
-	<tiles:putAttribute name="breadcrumb">
-		&nbsp;<a href="/"><spring:message code="breadcrumb.accueil"/></a>&nbsp;&gt;
-		<c:set var="urlRewriteCatalog">
-			<fwk:rewrite url="${baseUrlWithoutCatalogId}&catalogId=${catalog.catalogId}" paramUnRewrited="${paramRewriteCategory}" />
-		</c:set>
-		<c:choose>
-			<c:when test="${catalog.catalogBiz=='CAT_IDEE_CREATIVE'}">
-				<a href="${urlRewriteCatalog}">${catalog.catalogDescriptions[langId].title}</a>&nbsp;
-			</c:when>
-<%-- 			<c:otherwise> --%>
-<%-- 				${catalog.catalogDescriptions[langId].title}&nbsp; --%>
-<%-- 			</c:otherwise> --%>
-		</c:choose>
-		<c:if test="${not empty breadcrumb and catalog.catalogBiz=='CAT_IDEE_CREATIVE'}">
-			&gt;
-		</c:if>
-		<c:forEach items="${breadcrumb}" var="category" varStatus="cat">
-			<c:set var="urlRewriteBreadcrumb">
-				<c:choose >
-					<c:when test="${category.url == ''}">
-					</c:when>
-					<c:otherwise>
-						<fwk:rewrite url="${baseUrlWithoutCategoryId}&categoryId=${category.url}" paramUnRewrited="${paramRewriteCategory}" />
-					</c:otherwise>
-				</c:choose>
-			</c:set>
-			<c:choose>
-				<c:when test="${!cat.last && category.url != ''}">
-					<a href="${urlRewriteBreadcrumb}">${category.libelle}</a>&nbsp;&gt;
-				</c:when>
-				<c:when test="${!cat.last && category.url != ''}">
-					<span>${category.libelle}</span>&nbsp;&gt;
-				</c:when>
-				<c:when test="${cat.last}">
-					<span>${category.libelle}</span>
-				</c:when>
-				<c:otherwise>
-				</c:otherwise>
-			</c:choose>
-		</c:forEach>
-
-
-		<c:if test="${!empty urlEndOfSearch}">
-			| ${param.text}
-			<a href="${urlEndOfSearch}" class="filter"><img src="${contextPath}/resources/${codeIsoLang}/img/StarterStore/btn_croix.png" alt="X"/></a>
-		</c:if>
-	</tiles:putAttribute>
 	<tiles:putAttribute name="content">
 		<div id="content" class="categoryMultipleList">
 			<!-- ${animation}  -->
-			<style type="text/css">
-			#emsCML {width:990px;height:80px;background:url("${mediaPath}/ems/emsCML_bg.png") no-repeat;margin-bottom:30px;}
-			#emsCML h1 {float:left;width:138px;margin:14px 0 0 29px;font-size:34px;color:#fff;text-align:center;line-height:26px;}
-			#emsCML h1 span {font-size:22px;}
-			#emsCML p {float:left;width:580px;margin:14px 0 0 133px;font-size:14px;line-height:17px;color:#777777;}
-			</style>
-			${CAT_PC_BANDEAU}
+<!-- 			<style type="text/css"> -->
+<%-- 			#emsCML {width:990px;height:80px;background:url("${mediaPath}/ems/emsCML_bg.png") no-repeat;margin-bottom:30px;} --%>
+<!--  			#emsCML h1 {float:left;width:138px;margin:14px 0 0 29px;font-size:34px;color:#fff;text-align:center;line-height:26px;}  -->
+<!--  			#emsCML h1 span {font-size:22px;} */ -->
+<!--  			#emsCML p {float:left;width:580px;margin:14px 0 0 133px;font-size:14px;line-height:17px;color:#777777;}  -->
+<!-- 			</style> -->
+<%-- 			${CAT_PC_BANDEAU} --%>
 			
 			<c:if test="${fn:length(categories) > 0}">
 				<c:forEach items="${categories}" var="categorie" varStatus="categorieStatus">
@@ -172,5 +126,8 @@
 		<c:if test="${isTagMetafiliationActivated }">
 			<script type="text/javascript" src="http://img.metaffiliation.com/u/11/p33385.js?zone=categorie&idcategorie=${fn:trim(category.categoryBiz) }"></script>
 		</c:if>
+
+<!-- 		FIN DE LA PAGE. -->
+
 	</tiles:putAttribute>
 </tiles:insertDefinition>

@@ -6,7 +6,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib uri="http://www.pictime.com/tags/core" prefix="fwk"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-
+TU ME VOIS banane?
 <tiles:insertDefinition name="template">
 
 	<tiles:putAttribute name="title">
@@ -110,4 +110,5 @@
 			<script type="text/javascript" src="http://img.metaffiliation.com/u/11/p33385.js?zone=categorie&idcategorie=${fn:trim(category.categoryBiz) }"></script>
 		</c:if>
 	</tiles:putAttribute>
+	FIN DE LA PAGE ?
 </tiles:insertDefinition>

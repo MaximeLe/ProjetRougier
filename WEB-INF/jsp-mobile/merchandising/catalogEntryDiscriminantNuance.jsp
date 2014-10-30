@@ -6,12 +6,12 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <%@ taglib uri="http://www.pictime.com/tags/core" prefix="fwk"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-
+debut 
 <c:set var="devise"><c:choose><c:when test="${storeId==2}">&#36;</c:when><c:otherwise>€</c:otherwise></c:choose></c:set>
 <c:set var="urlRewrite"><fwk:rewrite url="/ajax/catalogEntry.html"/></c:set>
 <c:set var="urlCanonical"><fwk:rewrite url="${ceDisplay.urlWithoutEcId}${ceDisplay.catalogEntry.catalogEntryId}"/></c:set>
 
-<tiles:insertDefinition name="template">
+<tiles:insertDefinition name="mobile-template">
 <tiles:putAttribute name="title">
 	<c:if test="${not empty ceDisplay.catalogEntryDescription.title1}">${ceDisplay.catalogEntryDescription.title1}&nbsp;</c:if>
 	<c:if test="${not empty ceDisplay.catalogEntry.attributesNormalizedMapBizKey['MARQUE'].attributeNormalizeValues[0].attributeValueDescriptions[langId].description}">${ceDisplay.catalogEntry.attributesNormalizedMapBizKey['MARQUE'].attributeNormalizeValues[0].attributeValueDescriptions[langId].description}&nbsp;</c:if><spring:message code="catalogue.title"/>

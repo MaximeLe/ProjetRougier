@@ -6,7 +6,7 @@
 <%@ taglib uri="http://www.pictime.com/tags/core" prefix="fwk"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@ page import="com.pictime.rougier.merchandising.controller.CatalogEntryListController" %>
-
+Début cadeauSearchPage :
 <tiles:insertDefinition name="template">
 	<tiles:putAttribute name="title"><spring:message code="catalogue.cadeauSearchTitle"/></tiles:putAttribute>
 	<tiles:putAttribute name="description">${catalog.catalogDescriptions[langId].title}</tiles:putAttribute>
@@ -122,4 +122,5 @@
 		var paramNavigationContext = '${paramNavigationContext}';
 		</script>
 	</tiles:putAttribute>
+	FIN cadeauSearchPage.
 </tiles:insertDefinition>

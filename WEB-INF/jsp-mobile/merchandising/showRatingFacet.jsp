@@ -16,7 +16,7 @@
 	<c:set var="maxRating" value="${ratingDecimal}"/>
 	<c:if test="${ratingDecimal < 0.001 }">
 <%-- 		<img src="${contextPath}/resources/${codeIsoLang}/img/merchandising/ico_star${ratingPageProduct}_off.png" border="0" alt=" "/> --%>
-		<img src="${contextPath}/resources/${codeIsoLang}/img/merchandising/starE.png" width="12" height="11" alt="" border="0"/>
+		<img src="${contextPath}/resources-mobile/${codeIsoLang}/img/merchandising/starE.png" width="12" height="11" alt="" border="0"/>
 	</c:if>
 </c:if>
 

@@ -267,8 +267,6 @@ th {
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
-  position: relative;
-  top: 1px;
   display: inline-block;
   font-family: 'Glyphicons Halflings';
   font-style: normal;
@@ -532,6 +530,9 @@ th {
 }
 .glyphicon-chevron-right:before {
   content: "\e080";
+  position:absolute;
+  right:40px;
+  top:11px;
 }
 .glyphicon-plus-sign:before {
   content: "\e081";
@@ -910,7 +911,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  color: #000000;
   text-decoration: none;
 }
 a:hover,
@@ -5001,7 +5002,9 @@ a.list-group-item-danger.active:focus {
           box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 .panel-body {
-  padding: 15px;
+  background: #f0f0f0;
+  border-top: 1px solid #ddd;
+  padding: 15px 15px 15px 35px;
 }
 .panel-heading {
   padding: 10px 15px;
@@ -5175,6 +5178,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-group .panel {
   margin-bottom: 0;
+/*   background-image:url('../img/merchandising/pS_on.png') no-repeat; */
   border-radius: 4px;
 }
 .panel-group .panel + .panel {
@@ -5197,7 +5201,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-default > .panel-heading {
   color: #333;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   border-color: #ddd;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
